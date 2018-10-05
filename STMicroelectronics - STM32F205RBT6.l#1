@@ -51,10 +51,10 @@ Created by Upverter.com</description>
 <wire x1="5" y1="-5" x2="5" y2="5" width="0.1" layer="51"/>
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.1" layer="51"/>
 <wire x1="-5" y1="-5" x2="5" y2="-5" width="0.1" layer="51"/>
-<wire x1="-6.45" y1="-6.45" x2="-6.45" y2="6.45" width="0.1" layer="21"/>
-<wire x1="-6.45" y1="6.45" x2="6.45" y2="6.45" width="0.1" layer="21"/>
-<wire x1="6.45" y1="6.45" x2="6.45" y2="-6.45" width="0.1" layer="21"/>
-<wire x1="6.45" y1="-6.45" x2="-6.45" y2="-6.45" width="0.1" layer="21"/>
+<wire x1="-6.45" y1="-6.45" x2="-6.45" y2="6.45" width="0.1" layer="1"/>
+<wire x1="-6.45" y1="6.45" x2="6.45" y2="6.45" width="0.1" layer="41"/>
+<wire x1="6.45" y1="6.45" x2="6.45" y2="-6.45" width="0.1" layer="41"/>
+<wire x1="6.45" y1="-6.45" x2="-6.45" y2="-6.45" width="0.1" layer="41"/>
 <text x="-7.45" y="6.45" size="1" layer="25">&gt;NAME</text>
 <circle x="-5.75" y="4.45" radius="0.125" width="0.25" layer="21"/>
 <circle x="-3.75" y="3.75" radius="0.3" width="0.6" layer="21"/>

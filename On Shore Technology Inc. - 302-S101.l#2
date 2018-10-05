@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="ON_SHORE_TECHNOLOGY_INC._302-S101_0">
+                    <description>Shrouded Box Header</description>
+                    <wire layer="51" y2="4.4" width="0.15" x2="-10.3" y1="-4.4" x1="-10.3"/>
+                    <wire layer="51" y2="4.4" width="0.15" x2="10.3" y1="4.4" x1="-10.3"/>
+                    <wire layer="51" y2="-4.4" width="0.15" x2="10.3" y1="4.4" x1="10.3"/>
+                    <wire layer="51" y2="-4.4" width="0.15" x2="-10.3" y1="-4.4" x1="10.3"/>
+                    <wire layer="21" y2="4.4" width="0.15" x2="-10.3" y1="-4.4" x1="-10.3"/>
+                    <wire layer="21" y2="4.4" width="0.15" x2="10.3" y1="4.4" x1="-10.3"/>
+                    <wire layer="21" y2="-4.4" width="0.15" x2="10.3" y1="4.4" x1="10.3"/>
+                    <wire layer="21" y2="-4.4" width="0.15" x2="-10.3" y1="-4.4" x1="10.3"/>
+                    <wire layer="41" y2="4.5" width="0.1" x2="-10.59" y1="-4.5" x1="-10.59"/>
+                    <wire layer="41" y2="4.5" width="0.1" x2="10.59" y1="4.5" x1="-10.59"/>
+                    <wire layer="41" y2="-4.5" width="0.1" x2="10.59" y1="4.5" x1="10.59"/>
+                    <wire layer="41" y2="-4.5" width="0.1" x2="-10.59" y1="-4.5" x1="10.59"/>
+                    <text layer="25" align="bottom-left" y="4.8" x="-10.325" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="-4.85" x="-5.08" layer="21" radius="0.25" width="0.0"/>
+                    <pad diameter="1.57" name="1" shape="square" drill="1.02" y="-1.27" x="-5.08" rot="R0"/>
+                    <pad diameter="1.57" name="3" shape="round" drill="1.02" y="-1.27" x="-2.54" rot="R0"/>
+                    <pad diameter="1.57" name="5" shape="round" drill="1.02" y="-1.27" x="0.0" rot="R0"/>
+                    <pad diameter="1.57" name="7" shape="round" drill="1.02" y="-1.27" x="2.54" rot="R0"/>
+                    <pad diameter="1.57" name="9" shape="round" drill="1.02" y="-1.27" x="5.08" rot="R0"/>
+                    <pad diameter="1.57" name="10" shape="round" drill="1.02" y="1.27" x="5.08" rot="R0"/>
+                    <pad diameter="1.57" name="8" shape="round" drill="1.02" y="1.27" x="2.54" rot="R0"/>
+                    <pad diameter="1.57" name="6" shape="round" drill="1.02" y="1.27" x="0.0" rot="R0"/>
+                    <pad diameter="1.57" name="4" shape="round" drill="1.02" y="1.27" x="-2.54" rot="R0"/>
+                    <pad diameter="1.57" name="2" shape="round" drill="1.02" y="1.27" x="-5.08" rot="R0"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="ON_SHORE_TECHNOLOGY_INC._302-S101_0_0">
+                    <description>Shrouded Box Header</description>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="2.54" y1="-60.96" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="10.16" y1="-5.08" x1="2.54"/>
+                    <wire layer="94" y2="-60.96" width="0.254" x2="10.16" y1="-5.08" x1="10.16"/>
+                    <wire layer="94" y2="-60.96" width="0.254" x2="2.54" y1="-60.96" x1="10.16"/>
+                    <wire layer="94" y2="-9.652" width="1.016" x2="5.08" y1="-10.668" x1="5.08"/>
+                    <wire layer="94" y2="-9.652" width="1.016" x2="7.62" y1="-9.652" x1="5.08"/>
+                    <wire layer="94" y2="-10.668" width="1.016" x2="7.62" y1="-9.652" x1="7.62"/>
+                    <wire layer="94" y2="-10.668" width="1.016" x2="5.08" y1="-10.668" x1="7.62"/>
+                    <wire layer="94" y2="-10.16" width="0.508" x2="10.16" y1="-10.16" x1="7.112"/>
+                    <wire layer="94" y2="-14.732" width="1.016" x2="5.08" y1="-15.748" x1="5.08"/>
+                    <wire layer="94" y2="-14.732" width="1.016" x2="7.62" y1="-14.732" x1="5.08"/>
+                    <wire layer="94" y2="-15.748" width="1.016" x2="7.62" y1="-14.732" x1="7.62"/>
+                    <wire layer="94" y2="-15.748" width="1.016" x2="5.08" y1="-15.748" x1="7.62"/>
+                    <wire layer="94" y2="-15.24" width="0.508" x2="10.16" y1="-15.24" x1="7.112"/>
+                    <wire layer="94" y2="-19.812" width="1.016" x2="5.08" y1="-20.828" x1="5.08"/>
+                    <wire layer="94" y2="-19.812" width="1.016" x2="7.62" y1="-19.812" x1="5.08"/>
+                    <wire layer="94" y2="-20.828" width="1.016" x2="7.62" y1="-19.812" x1="7.62"/>
+                    <wire layer="94" y2="-20.828" width="1.016" x2="5.08" y1="-20.828" x1="7.62"/>
+                    <wire layer="94" y2="-20.32" width="0.508" x2="10.16" y1="-20.32" x1="7.112"/>
+                    <wire layer="94" y2="-24.892" width="1.016" x2="5.08" y1="-25.908" x1="5.08"/>
+                    <wire layer="94" y2="-24.892" width="1.016" x2="7.62" y1="-24.892" x1="5.08"/>
+                    <wire layer="94" y2="-25.908" width="1.016" x2="7.62" y1="-24.892" x1="7.62"/>
+                    <wire layer="94" y2="-25.908" width="1.016" x2="5.08" y1="-25.908" x1="7.62"/>
+                    <wire layer="94" y2="-25.4" width="0.508" x2="10.16" y1="-25.4" x1="7.112"/>
+                    <wire layer="94" y2="-29.972" width="1.016" x2="5.08" y1="-30.988" x1="5.08"/>
+                    <wire layer="94" y2="-29.972" width="1.016" x2="7.62" y1="-29.972" x1="5.08"/>
+                    <wire layer="94" y2="-30.988" width="1.016" x2="7.62" y1="-29.972" x1="7.62"/>
+                    <wire layer="94" y2="-30.988" width="1.016" x2="5.08" y1="-30.988" x1="7.62"/>
+                    <wire layer="94" y2="-30.48" width="0.508" x2="10.16" y1="-30.48" x1="7.112"/>
+                    <wire layer="94" y2="-35.052" width="1.016" x2="5.08" y1="-36.068" x1="5.08"/>
+                    <wire layer="94" y2="-35.052" width="1.016" x2="7.62" y1="-35.052" x1="5.08"/>
+                    <wire layer="94" y2="-36.068" width="1.016" x2="7.62" y1="-35.052" x1="7.62"/>
+                    <wire layer="94" y2="-36.068" width="1.016" x2="5.08" y1="-36.068" x1="7.62"/>
+                    <wire layer="94" y2="-35.56" width="0.508" x2="10.16" y1="-35.56" x1="7.112"/>
+                    <wire layer="94" y2="-40.132" width="1.016" x2="5.08" y1="-41.148" x1="5.08"/>
+                    <wire layer="94" y2="-40.132" width="1.016" x2="7.62" y1="-40.132" x1="5.08"/>
+                    <wire layer="94" y2="-41.148" width="1.016" x2="7.62" y1="-40.132" x1="7.62"/>
+                    <wire layer="94" y2="-41.148" width="1.016" x2="5.08" y1="-41.148" x1="7.62"/>
+                    <wire layer="94" y2="-40.64" width="0.508" x2="10.16" y1="-40.64" x1="7.112"/>
+                    <wire layer="94" y2="-45.212" width="1.016" x2="5.08" y1="-46.228" x1="5.08"/>
+                    <wire layer="94" y2="-45.212" width="1.016" x2="7.62" y1="-45.212" x1="5.08"/>
+                    <wire layer="94" y2="-46.228" width="1.016" x2="7.62" y1="-45.212" x1="7.62"/>
+                    <wire layer="94" y2="-46.228" width="1.016" x2="5.08" y1="-46.228" x1="7.62"/>
+                    <wire layer="94" y2="-45.72" width="0.508" x2="10.16" y1="-45.72" x1="7.112"/>
+                    <wire layer="94" y2="-50.292" width="1.016" x2="5.08" y1="-51.308" x1="5.08"/>
+                    <wire layer="94" y2="-50.292" width="1.016" x2="7.62" y1="-50.292" x1="5.08"/>
+                    <wire layer="94" y2="-51.308" width="1.016" x2="7.62" y1="-50.292" x1="7.62"/>
+                    <wire layer="94" y2="-51.308" width="1.016" x2="5.08" y1="-51.308" x1="7.62"/>
+                    <wire layer="94" y2="-50.8" width="0.508" x2="10.16" y1="-50.8" x1="7.112"/>
+                    <wire layer="94" y2="-55.372" width="1.016" x2="5.08" y1="-56.388" x1="5.08"/>
+                    <wire layer="94" y2="-55.372" width="1.016" x2="7.62" y1="-55.372" x1="5.08"/>
+                    <wire layer="94" y2="-56.388" width="1.016" x2="7.62" y1="-55.372" x1="7.62"/>
+                    <wire layer="94" y2="-56.388" width="1.016" x2="5.08" y1="-56.388" x1="7.62"/>
+                    <wire layer="94" y2="-55.88" width="0.508" x2="10.16" y1="-55.88" x1="7.112"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="10.16" y1="-10.16" x1="10.16"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="10.16" y1="-15.24" x1="10.16"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="10.16" y1="-20.32" x1="10.16"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="10.16" y1="-25.4" x1="10.16"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="10.16" y1="-30.48" x1="10.16"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="10.16" y1="-35.56" x1="10.16"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="10.16" y1="-40.64" x1="10.16"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="10.16" y1="-45.72" x1="10.16"/>
+                    <wire layer="94" y2="-50.8" width="0.15" x2="10.16" y1="-50.8" x1="10.16"/>
+                    <wire layer="94" y2="-55.88" width="0.15" x2="10.16" y1="-55.88" x1="10.16"/>
+                    <text layer="95" align="top-left" y="-2.54" x="2.54" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-66.04" x="2.54" rot="R0" size="2.54">302-S101</text>
+                    <pin name="1" visible="pad" length="middle" y="-10.16" x="15.24" rot="R180"/>
+                    <pin name="2" visible="pad" length="middle" y="-15.24" x="15.24" rot="R180"/>
+                    <pin name="3" visible="pad" length="middle" y="-20.32" x="15.24" rot="R180"/>
+                    <pin name="4" visible="pad" length="middle" y="-25.4" x="15.24" rot="R180"/>
+                    <pin name="5" visible="pad" length="middle" y="-30.48" x="15.24" rot="R180"/>
+                    <pin name="6" visible="pad" length="middle" y="-35.56" x="15.24" rot="R180"/>
+                    <pin name="7" visible="pad" length="middle" y="-40.64" x="15.24" rot="R180"/>
+                    <pin name="8" visible="pad" length="middle" y="-45.72" x="15.24" rot="R180"/>
+                    <pin name="9" visible="pad" length="middle" y="-50.8" x="15.24" rot="R180"/>
+                    <pin name="10" visible="pad" length="middle" y="-55.88" x="15.24" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="J" name="ON_SHORE_TECHNOLOGY_INC._302-S101">
+                    <description>Shrouded Box Header</description>
+                    <gates>
+                        <gate name="G$0" symbol="ON_SHORE_TECHNOLOGY_INC._302-S101_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="ON_SHORE_TECHNOLOGY_INC._302-S101_0_0" package="ON_SHORE_TECHNOLOGY_INC._302-S101_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                                <connect gate="G$0" pad="3" pin="3"/>
+                                <connect gate="G$0" pad="4" pin="4"/>
+                                <connect gate="G$0" pad="5" pin="5"/>
+                                <connect gate="G$0" pad="6" pin="6"/>
+                                <connect gate="G$0" pad="7" pin="7"/>
+                                <connect gate="G$0" pad="8" pin="8"/>
+                                <connect gate="G$0" pad="9" pin="9"/>
+                                <connect gate="G$0" pad="10" pin="10"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Current_Rating" value="1A max"/>
+                                    <attribute name="Number_of_Positions" value="10"/>
+                                    <attribute name="temperature_range_high" value="+105°C"/>
+                                    <attribute name="MPN" value="302-S101"/>
+                                    <attribute name="temperature_range_low" value="-55°C"/>
+                                    <attribute name="digikey_part_number" value="ED1543-ND"/>
+                                    <attribute name="prefix" value="J"/>
+                                    <attribute name="Number_of_Rows" value="2"/>
+                                    <attribute name="datasheet" value="http://www.on-shore.com/wp-content/uploads/2015/09/ipg33_0.pdf"/>
+                                    <attribute name="inductance" value=""/>
+                                    <attribute name="approved_alternate_part_number" value=""/>
+                                    <attribute name="Voltage_Rating" value="250V DC"/>
+                                    <attribute name="lead_free" value="yes"/>
+                                    <attribute name="mfg_package_ident" value=""/>
+                                    <attribute name="voltage" value=""/>
+                                    <attribute name="digikey_description" value='CONN 10 Positions Header Connector 0.100" (2.54mm) Through Hole Gold'/>
+                                    <attribute name="capacitance" value=""/>
+                                    <attribute name="rohs" value="yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="package" value="CONN_PTH_HDR10"/>
+                                    <attribute name="resistance" value=""/>
+                                    <attribute name="octopart_part_number" value=""/>
+                                    <attribute name="MF" value="On Shore Technology Inc."/>
+                                    <attribute name="Pitch" value="2.54mm"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
