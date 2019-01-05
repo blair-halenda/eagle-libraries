@@ -619,7 +619,7 @@ in SMD form.</description>
 <gate name="G$1" symbol="78FIXED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="SOT223" package="SOT223">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -713,7 +713,7 @@ in SMD form.</description>
 <gate name="G$1" symbol="78FIXED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="SOT223" package="SOT223">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
