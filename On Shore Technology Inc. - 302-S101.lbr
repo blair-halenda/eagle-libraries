@@ -4,12 +4,22 @@
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<<<<<<< HEAD
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="4" name="tKeepout" color="0" fill="1" visible="yes" active="yes"/>
+=======
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="4" name="tKeepout" color="63" fill="1" visible="yes" active="yes"/>
+>>>>>>> 5bedede523537dbcd088ff5259773a7f5232c853
 <layer number="16" name="Bottom" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -21,7 +31,11 @@
 <layer number="30" name="bStop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="1" visible="yes" active="yes"/>
+<<<<<<< HEAD
 <layer number="40" name="bKeepout" color="0" fill="1" visible="yes" active="yes"/>
+=======
+<layer number="40" name="bKeepout" color="63" fill="1" visible="yes" active="yes"/>
+>>>>>>> 5bedede523537dbcd088ff5259773a7f5232c853
 <layer number="41" name="tRestrict" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -50,10 +64,13 @@ Created by Upverter.com</description>
 <wire x1="-10.3" y1="4.4" x2="10.3" y2="4.4" width="0.15" layer="21"/>
 <wire x1="10.3" y1="4.4" x2="10.3" y2="-4.4" width="0.15" layer="21"/>
 <wire x1="10.3" y1="-4.4" x2="-10.3" y2="-4.4" width="0.15" layer="21"/>
+<<<<<<< HEAD
 <wire x1="-10.59" y1="-4.5" x2="-10.59" y2="4.5" width="0.1" layer="41"/>
 <wire x1="-10.59" y1="4.5" x2="10.59" y2="4.5" width="0.1" layer="41"/>
 <wire x1="10.59" y1="4.5" x2="10.59" y2="-4.5" width="0.1" layer="41"/>
 <wire x1="10.59" y1="-4.5" x2="-10.59" y2="-4.5" width="0.1" layer="41"/>
+=======
+>>>>>>> 5bedede523537dbcd088ff5259773a7f5232c853
 <text x="-10.325" y="4.8" size="1" layer="25">&gt;NAME</text>
 <circle x="-5.08" y="-4.85" radius="0.25" width="0" layer="21"/>
 <pad name="1" x="-5.08" y="-1.27" drill="1.02" diameter="1.57" shape="square"/>
@@ -150,7 +167,11 @@ Created by Upverter.com</description>
 </symbol>
 </symbols>
 <devicesets>
+<<<<<<< HEAD
 <deviceset name="302-S101" prefix="J">
+=======
+<deviceset name="ON_SHORE_TECHNOLOGY_INC._302-S101" prefix="J">
+>>>>>>> 5bedede523537dbcd088ff5259773a7f5232c853
 <description>Shrouded Box Header</description>
 <gates>
 <gate name="G$0" symbol="ON_SHORE_TECHNOLOGY_INC._302-S101_0_0" x="0" y="0"/>

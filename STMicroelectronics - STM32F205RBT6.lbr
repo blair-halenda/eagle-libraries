@@ -1,949 +1,954 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle>
-    <drawing>
-        <grid unitdist="mm" unit="mm"/>
-        <layers>
-            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
-            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
-            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
-            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
-            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
-            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
-            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
-            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
-            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
-            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
-            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
-            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
-            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
-            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
-            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
-            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
-            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
-            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
-            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
-            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
-            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
-            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
-            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
-            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
-            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
-            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
-        </layers>
-        <library name="Upverter Library">
-            <description>Upverter Parts Library
+<eagle version="9.1.3">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="4" name="tKeepout" color="0" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="0" fill="1" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Upverter Parts Library
 
 Created by Upverter.com</description>
-            <packages>
-                <package name="STMICROELECTRONICS_STM32F205RBT6_0">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="21" y2="4.75" width="0.15" x2="-4.75" y1="-4.75" x1="-4.75"/>
-                    <wire layer="21" y2="4.75" width="0.15" x2="4.75" y1="-4.75" x1="4.75"/>
-                    <wire layer="21" y2="4.75" width="0.15" x2="4.75" y1="4.75" x1="-4.75"/>
-                    <wire layer="21" y2="-4.75" width="0.15" x2="4.75" y1="-4.75" x1="-4.75"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="-5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="-5.0" x1="5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="5.0" x1="-5.0"/>
-                    <wire layer="51" y2="-5.0" width="0.1" x2="5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="41" y2="6.45" width="0.1" x2="-6.45" y1="-6.45" x1="-6.45"/>
-                    <wire layer="41" y2="6.45" width="0.1" x2="6.45" y1="6.45" x1="-6.45"/>
-                    <wire layer="41" y2="-6.45" width="0.1" x2="6.45" y1="6.45" x1="6.45"/>
-                    <wire layer="41" y2="-6.45" width="0.1" x2="-6.45" y1="-6.45" x1="6.45"/>
-                    <text layer="25" align="bottom-left" y="6.45" x="-7.45" rot="R0" size="1.0">&gt;NAME</text>
-                    <circle y="4.45" x="-5.75" layer="21" radius="0.125" width="0.25"/>
-                    <circle y="3.75" x="-3.75" layer="21" radius="0.3" width="0.6"/>
-                    <circle y="4.1" x="-4.1" layer="51" radius="0.5" width="0.1"/>
-                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.3" dy="1.2" y="3.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.3" dy="1.2" y="3.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.3" dy="1.2" y="2.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.3" dy="1.2" y="2.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.3" dy="1.2" y="1.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="0" dx="0.3" dy="1.2" y="1.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="0" dx="0.3" dy="1.2" y="0.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="0" dx="0.3" dy="1.2" y="0.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-0.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-0.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-1.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-1.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-2.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-2.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-3.25" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-3.75" x="-5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-5.75" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-3.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="34" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-3.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="35" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-2.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="36" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-2.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="37" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-1.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="38" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-1.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="39" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-0.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="40" stop="yes" roundness="0" dx="0.3" dy="1.2" y="-0.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="41" stop="yes" roundness="0" dx="0.3" dy="1.2" y="0.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="42" stop="yes" roundness="0" dx="0.3" dy="1.2" y="0.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="43" stop="yes" roundness="0" dx="0.3" dy="1.2" y="1.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="44" stop="yes" roundness="0" dx="0.3" dy="1.2" y="1.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="45" stop="yes" roundness="0" dx="0.3" dy="1.2" y="2.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="46" stop="yes" roundness="0" dx="0.3" dy="1.2" y="2.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="47" stop="yes" roundness="0" dx="0.3" dy="1.2" y="3.25" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="48" stop="yes" roundness="0" dx="0.3" dy="1.2" y="3.75" x="5.75" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="49" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="50" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="51" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="52" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="53" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="54" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="55" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="56" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="57" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="58" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="59" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="60" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="61" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="62" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="63" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="64" stop="yes" roundness="0" dx="0.3" dy="1.2" y="5.75" x="-3.75" rot="R0" cream="yes"/>
-                </package>
-                <package name="STMICROELECTRONICS_STM32F205RBT6_1">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="21" y2="4.35" width="0.15" x2="-4.35" y1="-4.35" x1="-4.35"/>
-                    <wire layer="21" y2="4.35" width="0.15" x2="4.35" y1="-4.35" x1="4.35"/>
-                    <wire layer="21" y2="4.35" width="0.15" x2="4.35" y1="4.35" x1="-4.35"/>
-                    <wire layer="21" y2="-4.35" width="0.15" x2="4.35" y1="-4.35" x1="-4.35"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="-5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="-5.0" x1="5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="5.0" x1="-5.0"/>
-                    <wire layer="51" y2="-5.0" width="0.1" x2="5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="41" y2="6.4" width="0.1" x2="-6.4" y1="-6.4" x1="-6.4"/>
-                    <wire layer="41" y2="6.4" width="0.1" x2="6.4" y1="6.4" x1="-6.4"/>
-                    <wire layer="41" y2="-6.4" width="0.1" x2="6.4" y1="6.4" x1="6.4"/>
-                    <wire layer="41" y2="-6.4" width="0.1" x2="-6.4" y1="-6.4" x1="6.4"/>
-                    <text layer="25" align="bottom-left" y="6.4" x="-7.4" rot="R0" size="1.0">&gt;NAME</text>
-                    <circle y="4.425" x="-5.525" layer="21" radius="0.125" width="0.25"/>
-                    <circle y="3.35" x="-3.35" layer="21" radius="0.3" width="0.6"/>
-                    <circle y="4.1" x="-4.1" layer="51" radius="0.5" width="0.1"/>
-                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.25" dy="1.55" y="3.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.25" dy="1.55" y="3.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.25" dy="1.55" y="2.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.25" dy="1.55" y="2.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.25" dy="1.55" y="1.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.25" dy="1.55" y="1.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.25" dy="1.55" y="0.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.25" dy="1.55" y="0.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-0.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-0.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-1.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-1.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-2.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-2.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-3.25" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-3.75" x="-5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-5.525" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-3.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="34" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-3.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="35" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-2.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="36" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-2.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="37" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-1.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="38" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-1.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="39" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-0.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="40" stop="yes" roundness="100" dx="0.25" dy="1.55" y="-0.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="41" stop="yes" roundness="100" dx="0.25" dy="1.55" y="0.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="42" stop="yes" roundness="100" dx="0.25" dy="1.55" y="0.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="43" stop="yes" roundness="100" dx="0.25" dy="1.55" y="1.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="44" stop="yes" roundness="100" dx="0.25" dy="1.55" y="1.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="45" stop="yes" roundness="100" dx="0.25" dy="1.55" y="2.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="46" stop="yes" roundness="100" dx="0.25" dy="1.55" y="2.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="47" stop="yes" roundness="100" dx="0.25" dy="1.55" y="3.25" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="48" stop="yes" roundness="100" dx="0.25" dy="1.55" y="3.75" x="5.525" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="49" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="50" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="51" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="52" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="53" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="54" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="55" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="56" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="57" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="58" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="59" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="60" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="61" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="62" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="63" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="64" stop="yes" roundness="100" dx="0.25" dy="1.55" y="5.525" x="-3.75" rot="R0" cream="yes"/>
-                </package>
-                <package name="STMICROELECTRONICS_STM32F205RBT6_2">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="21" y2="-4.25" width="0.15" x2="4.25" y1="-4.25" x1="-4.25"/>
-                    <wire layer="21" y2="4.25" width="0.15" x2="4.25" y1="4.25" x1="-4.25"/>
-                    <wire layer="21" y2="4.25" width="0.15" x2="4.25" y1="-4.25" x1="4.25"/>
-                    <wire layer="21" y2="4.25" width="0.15" x2="-4.25" y1="-4.25" x1="-4.25"/>
-                    <wire layer="51" y2="-5.0" width="0.1" x2="5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="-5.0" x1="5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="-5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="41" y2="6.7" width="0.1" x2="-6.7" y1="-6.7" x1="-6.7"/>
-                    <wire layer="41" y2="6.7" width="0.1" x2="6.7" y1="6.7" x1="-6.7"/>
-                    <wire layer="41" y2="-6.7" width="0.1" x2="6.7" y1="6.7" x1="6.7"/>
-                    <wire layer="41" y2="-6.7" width="0.1" x2="-6.7" y1="-6.7" x1="6.7"/>
-                    <text layer="25" align="bottom-left" y="6.7" x="-7.7" rot="R0" size="1.0">&gt;NAME</text>
-                    <circle y="3.25" x="-3.25" layer="21" radius="0.3" width="0.6"/>
-                    <circle y="4.45" x="-5.55" layer="21" radius="0.125" width="0.25"/>
-                    <circle y="4.1" x="-4.1" layer="51" radius="0.5" width="0.1"/>
-                    <smd layer="1" thermals="yes" name="64" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="63" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="62" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="61" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="60" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="59" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="58" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="57" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="56" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="55" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="54" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="53" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="52" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="51" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="50" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="49" stop="yes" roundness="100" dx="0.3" dy="1.8" y="5.55" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="48" stop="yes" roundness="100" dx="0.3" dy="1.8" y="3.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="47" stop="yes" roundness="100" dx="0.3" dy="1.8" y="3.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="46" stop="yes" roundness="100" dx="0.3" dy="1.8" y="2.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="45" stop="yes" roundness="100" dx="0.3" dy="1.8" y="2.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="44" stop="yes" roundness="100" dx="0.3" dy="1.8" y="1.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="43" stop="yes" roundness="100" dx="0.3" dy="1.8" y="1.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="42" stop="yes" roundness="100" dx="0.3" dy="1.8" y="0.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="41" stop="yes" roundness="100" dx="0.3" dy="1.8" y="0.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="40" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-0.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="39" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-0.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="38" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-1.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="37" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-1.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="36" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-2.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="35" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-2.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="34" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-3.25" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-3.75" x="5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-5.55" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-3.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-3.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-2.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-2.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-1.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-1.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-0.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.3" dy="1.8" y="-0.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.3" dy="1.8" y="0.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.3" dy="1.8" y="0.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.3" dy="1.8" y="1.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.3" dy="1.8" y="1.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.3" dy="1.8" y="2.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.3" dy="1.8" y="2.75" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.3" dy="1.8" y="3.25" x="-5.55" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.3" dy="1.8" y="3.75" x="-5.55" rot="R90" cream="yes"/>
-                </package>
-                <package name="STMICROELECTRONICS_STM32F205RBT6_3">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="21" y2="-4.15" width="0.15" x2="4.15" y1="-4.15" x1="-4.15"/>
-                    <wire layer="21" y2="4.15" width="0.15" x2="4.15" y1="4.15" x1="-4.15"/>
-                    <wire layer="21" y2="4.15" width="0.15" x2="4.15" y1="-4.15" x1="4.15"/>
-                    <wire layer="21" y2="4.15" width="0.15" x2="-4.15" y1="-4.15" x1="-4.15"/>
-                    <wire layer="51" y2="-5.0" width="0.1" x2="5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="5.0" x1="-5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="5.0" y1="-5.0" x1="5.0"/>
-                    <wire layer="51" y2="5.0" width="0.1" x2="-5.0" y1="-5.0" x1="-5.0"/>
-                    <wire layer="41" y2="7.15" width="0.1" x2="-7.15" y1="-7.15" x1="-7.15"/>
-                    <wire layer="41" y2="7.15" width="0.1" x2="7.15" y1="7.15" x1="-7.15"/>
-                    <wire layer="41" y2="-7.15" width="0.1" x2="7.15" y1="7.15" x1="7.15"/>
-                    <wire layer="41" y2="-7.15" width="0.1" x2="-7.15" y1="-7.15" x1="7.15"/>
-                    <text layer="25" align="bottom-left" y="7.15" x="-8.15" rot="R0" size="1.0">&gt;NAME</text>
-                    <circle y="3.15" x="-3.15" layer="21" radius="0.3" width="0.6"/>
-                    <circle y="4.45" x="-5.6" layer="21" radius="0.125" width="0.25"/>
-                    <circle y="4.1" x="-4.1" layer="51" radius="0.5" width="0.1"/>
-                    <smd layer="1" thermals="yes" name="64" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="63" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="62" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="61" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="60" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="59" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="58" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="57" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="56" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="55" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="54" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="53" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="52" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="51" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="50" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="49" stop="yes" roundness="100" dx="0.3" dy="2.1" y="5.6" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="48" stop="yes" roundness="100" dx="0.3" dy="2.1" y="3.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="47" stop="yes" roundness="100" dx="0.3" dy="2.1" y="3.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="46" stop="yes" roundness="100" dx="0.3" dy="2.1" y="2.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="45" stop="yes" roundness="100" dx="0.3" dy="2.1" y="2.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="44" stop="yes" roundness="100" dx="0.3" dy="2.1" y="1.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="43" stop="yes" roundness="100" dx="0.3" dy="2.1" y="1.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="42" stop="yes" roundness="100" dx="0.3" dy="2.1" y="0.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="41" stop="yes" roundness="100" dx="0.3" dy="2.1" y="0.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="40" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-0.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="39" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-0.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="38" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-1.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="37" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-1.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="36" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-2.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="35" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-2.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="34" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-3.25" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-3.75" x="5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-0.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-0.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-1.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-1.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-2.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-2.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-3.25" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-5.6" x="-3.75" rot="R0" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-3.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-3.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-2.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-2.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-1.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-1.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-0.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.3" dy="2.1" y="-0.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.3" dy="2.1" y="0.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.3" dy="2.1" y="0.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.3" dy="2.1" y="1.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.3" dy="2.1" y="1.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.3" dy="2.1" y="2.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.3" dy="2.1" y="2.75" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.3" dy="2.1" y="3.25" x="-5.6" rot="R90" cream="yes"/>
-                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.3" dy="2.1" y="3.75" x="-5.6" rot="R90" cream="yes"/>
-                </package>
-            </packages>
-            <symbols>
-                <symbol name="STMICROELECTRONICS_STM32F205RBT6_0_0">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-96.52" x1="0.0"/>
-                    <wire layer="94" y2="-5.08" width="0.508" x2="35.56" y1="-5.08" x1="0.0"/>
-                    <wire layer="94" y2="-96.52" width="0.508" x2="35.56" y1="-5.08" x1="35.56"/>
-                    <wire layer="94" y2="-96.52" width="0.508" x2="0.0" y1="-96.52" x1="35.56"/>
-                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
-                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
-                    <wire layer="94" y2="-12.7" width="0.15" x2="0.0" y1="-12.7" x1="0.0"/>
-                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
-                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
-                    <wire layer="94" y2="-20.32" width="0.15" x2="0.0" y1="-20.32" x1="0.0"/>
-                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
-                    <wire layer="94" y2="-25.4" width="0.15" x2="0.0" y1="-25.4" x1="0.0"/>
-                    <wire layer="94" y2="-7.62" width="0.15" x2="35.56" y1="-7.62" x1="35.56"/>
-                    <wire layer="94" y2="-10.16" width="0.15" x2="35.56" y1="-10.16" x1="35.56"/>
-                    <wire layer="94" y2="-12.7" width="0.15" x2="35.56" y1="-12.7" x1="35.56"/>
-                    <wire layer="94" y2="-35.56" width="0.15" x2="35.56" y1="-35.56" x1="35.56"/>
-                    <wire layer="94" y2="-38.1" width="0.15" x2="35.56" y1="-38.1" x1="35.56"/>
-                    <wire layer="94" y2="-40.64" width="0.15" x2="35.56" y1="-40.64" x1="35.56"/>
-                    <wire layer="94" y2="-43.18" width="0.15" x2="35.56" y1="-43.18" x1="35.56"/>
-                    <wire layer="94" y2="-45.72" width="0.15" x2="35.56" y1="-45.72" x1="35.56"/>
-                    <wire layer="94" y2="-48.26" width="0.15" x2="35.56" y1="-48.26" x1="35.56"/>
-                    <wire layer="94" y2="-30.48" width="0.15" x2="0.0" y1="-30.48" x1="0.0"/>
-                    <wire layer="94" y2="-33.02" width="0.15" x2="0.0" y1="-33.02" x1="0.0"/>
-                    <wire layer="94" y2="-35.56" width="0.15" x2="0.0" y1="-35.56" x1="0.0"/>
-                    <wire layer="94" y2="-38.1" width="0.15" x2="0.0" y1="-38.1" x1="0.0"/>
-                    <wire layer="94" y2="-40.64" width="0.15" x2="0.0" y1="-40.64" x1="0.0"/>
-                    <wire layer="94" y2="-43.18" width="0.15" x2="0.0" y1="-43.18" x1="0.0"/>
-                    <wire layer="94" y2="-45.72" width="0.15" x2="0.0" y1="-45.72" x1="0.0"/>
-                    <wire layer="94" y2="-48.26" width="0.15" x2="0.0" y1="-48.26" x1="0.0"/>
-                    <wire layer="94" y2="-15.24" width="0.15" x2="35.56" y1="-15.24" x1="35.56"/>
-                    <wire layer="94" y2="-17.78" width="0.15" x2="35.56" y1="-17.78" x1="35.56"/>
-                    <wire layer="94" y2="-20.32" width="0.15" x2="35.56" y1="-20.32" x1="35.56"/>
-                    <wire layer="94" y2="-22.86" width="0.15" x2="35.56" y1="-22.86" x1="35.56"/>
-                    <wire layer="94" y2="-25.4" width="0.15" x2="35.56" y1="-25.4" x1="35.56"/>
-                    <wire layer="94" y2="-30.48" width="0.15" x2="35.56" y1="-30.48" x1="35.56"/>
-                    <wire layer="94" y2="-33.02" width="0.15" x2="35.56" y1="-33.02" x1="35.56"/>
-                    <wire layer="94" y2="-88.9" width="0.15" x2="0.0" y1="-88.9" x1="0.0"/>
-                    <wire layer="94" y2="-91.44" width="0.15" x2="0.0" y1="-91.44" x1="0.0"/>
-                    <wire layer="94" y2="-93.98" width="0.15" x2="0.0" y1="-93.98" x1="0.0"/>
-                    <wire layer="94" y2="-53.34" width="0.15" x2="0.0" y1="-53.34" x1="0.0"/>
-                    <wire layer="94" y2="-55.88" width="0.15" x2="0.0" y1="-55.88" x1="0.0"/>
-                    <wire layer="94" y2="-58.42" width="0.15" x2="0.0" y1="-58.42" x1="0.0"/>
-                    <wire layer="94" y2="-60.96" width="0.15" x2="0.0" y1="-60.96" x1="0.0"/>
-                    <wire layer="94" y2="-63.5" width="0.15" x2="0.0" y1="-63.5" x1="0.0"/>
-                    <wire layer="94" y2="-66.04" width="0.15" x2="0.0" y1="-66.04" x1="0.0"/>
-                    <wire layer="94" y2="-68.58" width="0.15" x2="0.0" y1="-68.58" x1="0.0"/>
-                    <wire layer="94" y2="-71.12" width="0.15" x2="0.0" y1="-71.12" x1="0.0"/>
-                    <wire layer="94" y2="-76.2" width="0.15" x2="0.0" y1="-76.2" x1="0.0"/>
-                    <wire layer="94" y2="-78.74" width="0.15" x2="0.0" y1="-78.74" x1="0.0"/>
-                    <wire layer="94" y2="-81.28" width="0.15" x2="0.0" y1="-81.28" x1="0.0"/>
-                    <wire layer="94" y2="-83.82" width="0.15" x2="0.0" y1="-83.82" x1="0.0"/>
-                    <wire layer="94" y2="-86.36" width="0.15" x2="0.0" y1="-86.36" x1="0.0"/>
-                    <wire layer="94" y2="-53.34" width="0.15" x2="35.56" y1="-53.34" x1="35.56"/>
-                    <wire layer="94" y2="-81.28" width="0.15" x2="35.56" y1="-81.28" x1="35.56"/>
-                    <wire layer="94" y2="-76.2" width="0.15" x2="35.56" y1="-76.2" x1="35.56"/>
-                    <wire layer="94" y2="-58.42" width="0.15" x2="35.56" y1="-58.42" x1="35.56"/>
-                    <wire layer="94" y2="-60.96" width="0.15" x2="35.56" y1="-60.96" x1="35.56"/>
-                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
-                    <text layer="95" align="top-left" y="-101.6" x="0.0" rot="R0" size="2.54">STM32F205RBT6</text>
-                    <pin direction="io" name="PA0-WKUP(PA0)" visible="both" length="middle" y="-7.62" x="-5.08"/>
-                    <pin direction="io" name="PA1" visible="both" length="middle" y="-10.16" x="-5.08"/>
-                    <pin direction="io" name="PA2" visible="both" length="middle" y="-12.7" x="-5.08"/>
-                    <pin direction="io" name="PA3" visible="both" length="middle" y="-15.24" x="-5.08"/>
-                    <pin direction="io" name="PA4" visible="both" length="middle" y="-17.78" x="-5.08"/>
-                    <pin direction="io" name="PA5" visible="both" length="middle" y="-20.32" x="-5.08"/>
-                    <pin direction="io" name="PA6" visible="both" length="middle" y="-22.86" x="-5.08"/>
-                    <pin direction="io" name="PA7" visible="both" length="middle" y="-25.4" x="-5.08"/>
-                    <pin direction="io" name="PB0" visible="both" length="middle" y="-7.62" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB1" visible="both" length="middle" y="-10.16" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB2/BOOT1(PB2)" visible="both" length="middle" y="-12.7" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB10" visible="both" length="middle" y="-35.56" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB11" visible="both" length="middle" y="-38.1" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB12" visible="both" length="middle" y="-40.64" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB13" visible="both" length="middle" y="-43.18" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB14" visible="both" length="middle" y="-45.72" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB15" visible="both" length="middle" y="-48.26" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PA8" visible="both" length="middle" y="-30.48" x="-5.08"/>
-                    <pin direction="io" name="PA9" visible="both" length="middle" y="-33.02" x="-5.08"/>
-                    <pin direction="io" name="PA10" visible="both" length="middle" y="-35.56" x="-5.08"/>
-                    <pin direction="io" name="PA11" visible="both" length="middle" y="-38.1" x="-5.08"/>
-                    <pin direction="io" name="PA12" visible="both" length="middle" y="-40.64" x="-5.08"/>
-                    <pin direction="io" name="PA13(JTMS-SWDIO)" visible="both" length="middle" y="-43.18" x="-5.08"/>
-                    <pin direction="io" name="PA14(JTCK-SWCLK)" visible="both" length="middle" y="-45.72" x="-5.08"/>
-                    <pin direction="io" name="PA15(JTDI)" visible="both" length="middle" y="-48.26" x="-5.08"/>
-                    <pin direction="io" name="PB3(JTDO/TRACESWO)" visible="both" length="middle" y="-15.24" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB4" visible="both" length="middle" y="-17.78" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB5" visible="both" length="middle" y="-20.32" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB6" visible="both" length="middle" y="-22.86" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB7" visible="both" length="middle" y="-25.4" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB8" visible="both" length="middle" y="-30.48" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PB9" visible="both" length="middle" y="-33.02" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PC13" visible="both" length="middle" y="-88.9" x="-5.08"/>
-                    <pin direction="io" name="PC14-OSC32_IN(PC14)" visible="both" length="middle" y="-91.44" x="-5.08"/>
-                    <pin direction="io" name="PC15-OSC32_OUT(PC15)" visible="both" length="middle" y="-93.98" x="-5.08"/>
-                    <pin direction="io" name="PC0" visible="both" length="middle" y="-53.34" x="-5.08"/>
-                    <pin direction="io" name="PC1" visible="both" length="middle" y="-55.88" x="-5.08"/>
-                    <pin direction="io" name="PC2" visible="both" length="middle" y="-58.42" x="-5.08"/>
-                    <pin direction="io" name="PC3" visible="both" length="middle" y="-60.96" x="-5.08"/>
-                    <pin direction="io" name="PC4" visible="both" length="middle" y="-63.5" x="-5.08"/>
-                    <pin direction="io" name="PC5" visible="both" length="middle" y="-66.04" x="-5.08"/>
-                    <pin direction="io" name="PC6" visible="both" length="middle" y="-68.58" x="-5.08"/>
-                    <pin direction="io" name="PC7" visible="both" length="middle" y="-71.12" x="-5.08"/>
-                    <pin direction="io" name="PC8" visible="both" length="middle" y="-76.2" x="-5.08"/>
-                    <pin direction="io" name="PC9" visible="both" length="middle" y="-78.74" x="-5.08"/>
-                    <pin direction="io" name="PC10" visible="both" length="middle" y="-81.28" x="-5.08"/>
-                    <pin direction="io" name="PC11" visible="both" length="middle" y="-83.82" x="-5.08"/>
-                    <pin direction="io" name="PC12" visible="both" length="middle" y="-86.36" x="-5.08"/>
-                    <pin direction="io" name="PD2" visible="both" length="middle" y="-53.34" x="40.64" rot="R180"/>
-                    <pin direction="io" name="NRST" visible="both" length="middle" y="-81.28" x="40.64" rot="R180"/>
-                    <pin direction="in" name="BOOT0" visible="both" length="middle" y="-76.2" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PH0-OSC_IN(PH0)" visible="both" length="middle" y="-58.42" x="40.64" rot="R180"/>
-                    <pin direction="io" name="PH1-OSC_OUT(PH1)" visible="both" length="middle" y="-60.96" x="40.64" rot="R180"/>
-                </symbol>
-                <symbol name="STMICROELECTRONICS_STM32F205RBT6_0_1">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-27.94" x1="0.0"/>
-                    <wire layer="94" y2="-5.08" width="0.508" x2="20.32" y1="-5.08" x1="0.0"/>
-                    <wire layer="94" y2="-27.94" width="0.508" x2="20.32" y1="-5.08" x1="20.32"/>
-                    <wire layer="94" y2="-27.94" width="0.508" x2="0.0" y1="-27.94" x1="20.32"/>
-                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
-                    <wire layer="94" y2="-25.4" width="0.15" x2="20.32" y1="-25.4" x1="20.32"/>
-                    <wire layer="94" y2="-25.4" width="0.15" x2="0.0" y1="-25.4" x1="0.0"/>
-                    <wire layer="94" y2="-20.32" width="0.15" x2="20.32" y1="-20.32" x1="20.32"/>
-                    <wire layer="94" y2="-20.32" width="0.15" x2="0.0" y1="-20.32" x1="0.0"/>
-                    <wire layer="94" y2="-12.7" width="0.15" x2="0.0" y1="-12.7" x1="0.0"/>
-                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
-                    <wire layer="94" y2="-17.78" width="0.15" x2="20.32" y1="-17.78" x1="20.32"/>
-                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
-                    <wire layer="94" y2="-7.62" width="0.15" x2="20.32" y1="-7.62" x1="20.32"/>
-                    <wire layer="94" y2="-10.16" width="0.15" x2="20.32" y1="-10.16" x1="20.32"/>
-                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
-                    <text layer="95" align="top-left" y="-33.02" x="0.0" rot="R0" size="2.54">STM32F205RBT6</text>
-                    <pin direction="pwr" name="VBAT" visible="both" length="middle" y="-7.62" x="-5.08"/>
-                    <pin direction="pwr" name="VSSA" visible="both" length="middle" y="-25.4" x="25.4" rot="R180"/>
-                    <pin direction="pwr" name="VDDA" visible="both" length="middle" y="-25.4" x="-5.08"/>
-                    <pin direction="pwr" name="VSS_4" visible="both" length="middle" y="-20.32" x="25.4" rot="R180"/>
-                    <pin direction="pwr" name="VDD_4" visible="both" length="middle" y="-20.32" x="-5.08"/>
-                    <pin direction="pwr" name="VDD_1" visible="both" length="middle" y="-12.7" x="-5.08"/>
-                    <pin direction="pwr" name="VDD_2" visible="both" length="middle" y="-15.24" x="-5.08"/>
-                    <pin direction="pwr" name="VSS_3" visible="both" length="middle" y="-17.78" x="25.4" rot="R180"/>
-                    <pin direction="pwr" name="VDD_3" visible="both" length="middle" y="-17.78" x="-5.08"/>
-                    <pin direction="pwr" name="VCAP_1" visible="both" length="middle" y="-7.62" x="25.4" rot="R180"/>
-                    <pin direction="pwr" name="VCAP_2" visible="both" length="middle" y="-10.16" x="25.4" rot="R180"/>
-                </symbol>
-            </symbols>
-            <devicesets>
-                <deviceset prefix="U" name="STMICROELECTRONICS_STM32F205RBT6">
-                    <description>MC-ARM-STM32F20X-SQ64</description>
-                    <gates>
-                        <gate name="A" symbol="STMICROELECTRONICS_STM32F205RBT6_0_0" x="0"/>
-                        <gate name="B" symbol="STMICROELECTRONICS_STM32F205RBT6_0_1" x="55.56"/>
-                    </gates>
-                    <devices>
-                        <device name="STMICROELECTRONICS_STM32F205RBT6_0_0" package="STMICROELECTRONICS_STM32F205RBT6_0">
-                            <connects>
-                                <connect gate="B" pad="1" pin="VBAT"/>
-                                <connect gate="A" pad="10" pin="PC2"/>
-                                <connect gate="A" pad="11" pin="PC3"/>
-                                <connect gate="B" pad="12" pin="VSSA"/>
-                                <connect gate="B" pad="13" pin="VDDA"/>
-                                <connect gate="A" pad="14" pin="PA0-WKUP(PA0)"/>
-                                <connect gate="A" pad="15" pin="PA1"/>
-                                <connect gate="A" pad="16" pin="PA2"/>
-                                <connect gate="A" pad="17" pin="PA3"/>
-                                <connect gate="B" pad="18" pin="VSS_4"/>
-                                <connect gate="B" pad="19" pin="VDD_4"/>
-                                <connect gate="A" pad="2" pin="PC13"/>
-                                <connect gate="A" pad="20" pin="PA4"/>
-                                <connect gate="A" pad="21" pin="PA5"/>
-                                <connect gate="A" pad="22" pin="PA6"/>
-                                <connect gate="A" pad="23" pin="PA7"/>
-                                <connect gate="A" pad="24" pin="PC4"/>
-                                <connect gate="A" pad="25" pin="PC5"/>
-                                <connect gate="A" pad="26" pin="PB0"/>
-                                <connect gate="A" pad="27" pin="PB1"/>
-                                <connect gate="A" pad="28" pin="PB2/BOOT1(PB2)"/>
-                                <connect gate="A" pad="29" pin="PB10"/>
-                                <connect gate="A" pad="3" pin="PC14-OSC32_IN(PC14)"/>
-                                <connect gate="A" pad="30" pin="PB11"/>
-                                <connect gate="B" pad="31" pin="VCAP_1"/>
-                                <connect gate="B" pad="32" pin="VDD_1"/>
-                                <connect gate="A" pad="33" pin="PB12"/>
-                                <connect gate="A" pad="34" pin="PB13"/>
-                                <connect gate="A" pad="35" pin="PB14"/>
-                                <connect gate="A" pad="36" pin="PB15"/>
-                                <connect gate="A" pad="37" pin="PC6"/>
-                                <connect gate="A" pad="38" pin="PC7"/>
-                                <connect gate="A" pad="39" pin="PC8"/>
-                                <connect gate="A" pad="4" pin="PC15-OSC32_OUT(PC15)"/>
-                                <connect gate="A" pad="40" pin="PC9"/>
-                                <connect gate="A" pad="41" pin="PA8"/>
-                                <connect gate="A" pad="42" pin="PA9"/>
-                                <connect gate="A" pad="43" pin="PA10"/>
-                                <connect gate="A" pad="44" pin="PA11"/>
-                                <connect gate="A" pad="45" pin="PA12"/>
-                                <connect gate="A" pad="46" pin="PA13(JTMS-SWDIO)"/>
-                                <connect gate="B" pad="47" pin="VCAP_2"/>
-                                <connect gate="B" pad="48" pin="VDD_2"/>
-                                <connect gate="A" pad="49" pin="PA14(JTCK-SWCLK)"/>
-                                <connect gate="A" pad="5" pin="PH0-OSC_IN(PH0)"/>
-                                <connect gate="A" pad="50" pin="PA15(JTDI)"/>
-                                <connect gate="A" pad="51" pin="PC10"/>
-                                <connect gate="A" pad="52" pin="PC11"/>
-                                <connect gate="A" pad="53" pin="PC12"/>
-                                <connect gate="A" pad="54" pin="PD2"/>
-                                <connect gate="A" pad="55" pin="PB3(JTDO/TRACESWO)"/>
-                                <connect gate="A" pad="56" pin="PB4"/>
-                                <connect gate="A" pad="57" pin="PB5"/>
-                                <connect gate="A" pad="58" pin="PB6"/>
-                                <connect gate="A" pad="59" pin="PB7"/>
-                                <connect gate="A" pad="6" pin="PH1-OSC_OUT(PH1)"/>
-                                <connect gate="A" pad="60" pin="BOOT0"/>
-                                <connect gate="A" pad="61" pin="PB8"/>
-                                <connect gate="A" pad="62" pin="PB9"/>
-                                <connect gate="B" pad="63" pin="VSS_3"/>
-                                <connect gate="B" pad="64" pin="VDD_3"/>
-                                <connect gate="A" pad="7" pin="NRST"/>
-                                <connect gate="A" pad="8" pin="PC0"/>
-                                <connect gate="A" pad="9" pin="PC1"/>
-                            </connects>
-                            <technologies>
-                                <technology>
-                                    <attribute name="IOs_High_Current" value="51"/>
-                                    <attribute name="DA_Converter" value="2x12-bit (2 Channel)"/>
-                                    <attribute name="MPN" value="STM32F205RBT6"/>
-                                    <attribute name="Datasheet_Version" value="Rev. 9"/>
-                                    <attribute name="Package_Version" value="Rev. 4, 06/2013"/>
-                                    <attribute name="Package_Description" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
-                                    <attribute name="Supply_VoltageVcc_min_V" value="1.8"/>
-                                    <attribute name="Core" value="ARM Cortex-M3"/>
-                                    <attribute name="Component_Link_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
-                                    <attribute name="Internal_RAM_Size_kB" value="64"/>
-                                    <attribute name="ciiva_ids" value="3247052"/>
-                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
-                                    <attribute name="vault_guid" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
-                                    <attribute name="Component_Link_1_URL" value="http://www.st.com/web/en/home.html"/>
-                                    <attribute name="imported" value="yes"/>
-                                    <attribute name="Packing" value="Tray"/>
-                                    <attribute name="release_date" value="1387182878"/>
-                                    <attribute name="vault_revision" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
-                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
-                                    <attribute name="FLASH_Size_Prog_kB" value="128"/>
-                                    <attribute name="MF" value="STMicroelectronics"/>
-                                    <attribute name="prefix" value="U"/>
-                                    <attribute name="datasheet" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
-                                    <attribute name="import_ts" value="1521848045"/>
-                                    <attribute name="Operating_FrequencyF_Processor_speed_MHz" value="120"/>
-                                    <attribute name="footprint_variant_name_0" value="STM-LQFP64_V"/>
-                                    <attribute name="footprint_variant_name_1" value="Level C"/>
-                                    <attribute name="footprint_variant_name_2" value="Level B"/>
-                                    <attribute name="footprint_variant_name_3" value="Level A"/>
-                                    <attribute name="imported_from" value="vault"/>
-                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
-                                    <attribute name="package" value="LQFP64"/>
-                                </technology>
-                            </technologies>
-                        </device>
-                        <device name="STMICROELECTRONICS_STM32F205RBT6_0_1" package="STMICROELECTRONICS_STM32F205RBT6_1">
-                            <connects>
-                                <connect gate="B" pad="1" pin="VBAT"/>
-                                <connect gate="A" pad="10" pin="PC2"/>
-                                <connect gate="A" pad="11" pin="PC3"/>
-                                <connect gate="B" pad="12" pin="VSSA"/>
-                                <connect gate="B" pad="13" pin="VDDA"/>
-                                <connect gate="A" pad="14" pin="PA0-WKUP(PA0)"/>
-                                <connect gate="A" pad="15" pin="PA1"/>
-                                <connect gate="A" pad="16" pin="PA2"/>
-                                <connect gate="A" pad="17" pin="PA3"/>
-                                <connect gate="B" pad="18" pin="VSS_4"/>
-                                <connect gate="B" pad="19" pin="VDD_4"/>
-                                <connect gate="A" pad="2" pin="PC13"/>
-                                <connect gate="A" pad="20" pin="PA4"/>
-                                <connect gate="A" pad="21" pin="PA5"/>
-                                <connect gate="A" pad="22" pin="PA6"/>
-                                <connect gate="A" pad="23" pin="PA7"/>
-                                <connect gate="A" pad="24" pin="PC4"/>
-                                <connect gate="A" pad="25" pin="PC5"/>
-                                <connect gate="A" pad="26" pin="PB0"/>
-                                <connect gate="A" pad="27" pin="PB1"/>
-                                <connect gate="A" pad="28" pin="PB2/BOOT1(PB2)"/>
-                                <connect gate="A" pad="29" pin="PB10"/>
-                                <connect gate="A" pad="3" pin="PC14-OSC32_IN(PC14)"/>
-                                <connect gate="A" pad="30" pin="PB11"/>
-                                <connect gate="B" pad="31" pin="VCAP_1"/>
-                                <connect gate="B" pad="32" pin="VDD_1"/>
-                                <connect gate="A" pad="33" pin="PB12"/>
-                                <connect gate="A" pad="34" pin="PB13"/>
-                                <connect gate="A" pad="35" pin="PB14"/>
-                                <connect gate="A" pad="36" pin="PB15"/>
-                                <connect gate="A" pad="37" pin="PC6"/>
-                                <connect gate="A" pad="38" pin="PC7"/>
-                                <connect gate="A" pad="39" pin="PC8"/>
-                                <connect gate="A" pad="4" pin="PC15-OSC32_OUT(PC15)"/>
-                                <connect gate="A" pad="40" pin="PC9"/>
-                                <connect gate="A" pad="41" pin="PA8"/>
-                                <connect gate="A" pad="42" pin="PA9"/>
-                                <connect gate="A" pad="43" pin="PA10"/>
-                                <connect gate="A" pad="44" pin="PA11"/>
-                                <connect gate="A" pad="45" pin="PA12"/>
-                                <connect gate="A" pad="46" pin="PA13(JTMS-SWDIO)"/>
-                                <connect gate="B" pad="47" pin="VCAP_2"/>
-                                <connect gate="B" pad="48" pin="VDD_2"/>
-                                <connect gate="A" pad="49" pin="PA14(JTCK-SWCLK)"/>
-                                <connect gate="A" pad="5" pin="PH0-OSC_IN(PH0)"/>
-                                <connect gate="A" pad="50" pin="PA15(JTDI)"/>
-                                <connect gate="A" pad="51" pin="PC10"/>
-                                <connect gate="A" pad="52" pin="PC11"/>
-                                <connect gate="A" pad="53" pin="PC12"/>
-                                <connect gate="A" pad="54" pin="PD2"/>
-                                <connect gate="A" pad="55" pin="PB3(JTDO/TRACESWO)"/>
-                                <connect gate="A" pad="56" pin="PB4"/>
-                                <connect gate="A" pad="57" pin="PB5"/>
-                                <connect gate="A" pad="58" pin="PB6"/>
-                                <connect gate="A" pad="59" pin="PB7"/>
-                                <connect gate="A" pad="6" pin="PH1-OSC_OUT(PH1)"/>
-                                <connect gate="A" pad="60" pin="BOOT0"/>
-                                <connect gate="A" pad="61" pin="PB8"/>
-                                <connect gate="A" pad="62" pin="PB9"/>
-                                <connect gate="B" pad="63" pin="VSS_3"/>
-                                <connect gate="B" pad="64" pin="VDD_3"/>
-                                <connect gate="A" pad="7" pin="NRST"/>
-                                <connect gate="A" pad="8" pin="PC0"/>
-                                <connect gate="A" pad="9" pin="PC1"/>
-                            </connects>
-                            <technologies>
-                                <technology>
-                                    <attribute name="IOs_High_Current" value="51"/>
-                                    <attribute name="DA_Converter" value="2x12-bit (2 Channel)"/>
-                                    <attribute name="MPN" value="STM32F205RBT6"/>
-                                    <attribute name="Datasheet_Version" value="Rev. 9"/>
-                                    <attribute name="Package_Version" value="Rev. 4, 06/2013"/>
-                                    <attribute name="Package_Description" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
-                                    <attribute name="Supply_VoltageVcc_min_V" value="1.8"/>
-                                    <attribute name="Core" value="ARM Cortex-M3"/>
-                                    <attribute name="Component_Link_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
-                                    <attribute name="Internal_RAM_Size_kB" value="64"/>
-                                    <attribute name="ciiva_ids" value="3247052"/>
-                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
-                                    <attribute name="vault_guid" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
-                                    <attribute name="Component_Link_1_URL" value="http://www.st.com/web/en/home.html"/>
-                                    <attribute name="imported" value="yes"/>
-                                    <attribute name="Packing" value="Tray"/>
-                                    <attribute name="release_date" value="1387182878"/>
-                                    <attribute name="vault_revision" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
-                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
-                                    <attribute name="FLASH_Size_Prog_kB" value="128"/>
-                                    <attribute name="MF" value="STMicroelectronics"/>
-                                    <attribute name="prefix" value="U"/>
-                                    <attribute name="datasheet" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
-                                    <attribute name="import_ts" value="1521848045"/>
-                                    <attribute name="Operating_FrequencyF_Processor_speed_MHz" value="120"/>
-                                    <attribute name="footprint_variant_name_0" value="STM-LQFP64_V"/>
-                                    <attribute name="footprint_variant_name_1" value="Level C"/>
-                                    <attribute name="footprint_variant_name_2" value="Level B"/>
-                                    <attribute name="footprint_variant_name_3" value="Level A"/>
-                                    <attribute name="imported_from" value="vault"/>
-                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
-                                    <attribute name="package" value="LQFP64"/>
-                                </technology>
-                            </technologies>
-                        </device>
-                        <device name="STMICROELECTRONICS_STM32F205RBT6_0_2" package="STMICROELECTRONICS_STM32F205RBT6_2">
-                            <connects>
-                                <connect gate="B" pad="1" pin="VBAT"/>
-                                <connect gate="A" pad="10" pin="PC2"/>
-                                <connect gate="A" pad="11" pin="PC3"/>
-                                <connect gate="B" pad="12" pin="VSSA"/>
-                                <connect gate="B" pad="13" pin="VDDA"/>
-                                <connect gate="A" pad="14" pin="PA0-WKUP(PA0)"/>
-                                <connect gate="A" pad="15" pin="PA1"/>
-                                <connect gate="A" pad="16" pin="PA2"/>
-                                <connect gate="A" pad="17" pin="PA3"/>
-                                <connect gate="B" pad="18" pin="VSS_4"/>
-                                <connect gate="B" pad="19" pin="VDD_4"/>
-                                <connect gate="A" pad="2" pin="PC13"/>
-                                <connect gate="A" pad="20" pin="PA4"/>
-                                <connect gate="A" pad="21" pin="PA5"/>
-                                <connect gate="A" pad="22" pin="PA6"/>
-                                <connect gate="A" pad="23" pin="PA7"/>
-                                <connect gate="A" pad="24" pin="PC4"/>
-                                <connect gate="A" pad="25" pin="PC5"/>
-                                <connect gate="A" pad="26" pin="PB0"/>
-                                <connect gate="A" pad="27" pin="PB1"/>
-                                <connect gate="A" pad="28" pin="PB2/BOOT1(PB2)"/>
-                                <connect gate="A" pad="29" pin="PB10"/>
-                                <connect gate="A" pad="3" pin="PC14-OSC32_IN(PC14)"/>
-                                <connect gate="A" pad="30" pin="PB11"/>
-                                <connect gate="B" pad="31" pin="VCAP_1"/>
-                                <connect gate="B" pad="32" pin="VDD_1"/>
-                                <connect gate="A" pad="33" pin="PB12"/>
-                                <connect gate="A" pad="34" pin="PB13"/>
-                                <connect gate="A" pad="35" pin="PB14"/>
-                                <connect gate="A" pad="36" pin="PB15"/>
-                                <connect gate="A" pad="37" pin="PC6"/>
-                                <connect gate="A" pad="38" pin="PC7"/>
-                                <connect gate="A" pad="39" pin="PC8"/>
-                                <connect gate="A" pad="4" pin="PC15-OSC32_OUT(PC15)"/>
-                                <connect gate="A" pad="40" pin="PC9"/>
-                                <connect gate="A" pad="41" pin="PA8"/>
-                                <connect gate="A" pad="42" pin="PA9"/>
-                                <connect gate="A" pad="43" pin="PA10"/>
-                                <connect gate="A" pad="44" pin="PA11"/>
-                                <connect gate="A" pad="45" pin="PA12"/>
-                                <connect gate="A" pad="46" pin="PA13(JTMS-SWDIO)"/>
-                                <connect gate="B" pad="47" pin="VCAP_2"/>
-                                <connect gate="B" pad="48" pin="VDD_2"/>
-                                <connect gate="A" pad="49" pin="PA14(JTCK-SWCLK)"/>
-                                <connect gate="A" pad="5" pin="PH0-OSC_IN(PH0)"/>
-                                <connect gate="A" pad="50" pin="PA15(JTDI)"/>
-                                <connect gate="A" pad="51" pin="PC10"/>
-                                <connect gate="A" pad="52" pin="PC11"/>
-                                <connect gate="A" pad="53" pin="PC12"/>
-                                <connect gate="A" pad="54" pin="PD2"/>
-                                <connect gate="A" pad="55" pin="PB3(JTDO/TRACESWO)"/>
-                                <connect gate="A" pad="56" pin="PB4"/>
-                                <connect gate="A" pad="57" pin="PB5"/>
-                                <connect gate="A" pad="58" pin="PB6"/>
-                                <connect gate="A" pad="59" pin="PB7"/>
-                                <connect gate="A" pad="6" pin="PH1-OSC_OUT(PH1)"/>
-                                <connect gate="A" pad="60" pin="BOOT0"/>
-                                <connect gate="A" pad="61" pin="PB8"/>
-                                <connect gate="A" pad="62" pin="PB9"/>
-                                <connect gate="B" pad="63" pin="VSS_3"/>
-                                <connect gate="B" pad="64" pin="VDD_3"/>
-                                <connect gate="A" pad="7" pin="NRST"/>
-                                <connect gate="A" pad="8" pin="PC0"/>
-                                <connect gate="A" pad="9" pin="PC1"/>
-                            </connects>
-                            <technologies>
-                                <technology>
-                                    <attribute name="IOs_High_Current" value="51"/>
-                                    <attribute name="DA_Converter" value="2x12-bit (2 Channel)"/>
-                                    <attribute name="MPN" value="STM32F205RBT6"/>
-                                    <attribute name="Datasheet_Version" value="Rev. 9"/>
-                                    <attribute name="Package_Version" value="Rev. 4, 06/2013"/>
-                                    <attribute name="Package_Description" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
-                                    <attribute name="Supply_VoltageVcc_min_V" value="1.8"/>
-                                    <attribute name="Core" value="ARM Cortex-M3"/>
-                                    <attribute name="Component_Link_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
-                                    <attribute name="Internal_RAM_Size_kB" value="64"/>
-                                    <attribute name="ciiva_ids" value="3247052"/>
-                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
-                                    <attribute name="vault_guid" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
-                                    <attribute name="Component_Link_1_URL" value="http://www.st.com/web/en/home.html"/>
-                                    <attribute name="imported" value="yes"/>
-                                    <attribute name="Packing" value="Tray"/>
-                                    <attribute name="release_date" value="1387182878"/>
-                                    <attribute name="vault_revision" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
-                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
-                                    <attribute name="FLASH_Size_Prog_kB" value="128"/>
-                                    <attribute name="MF" value="STMicroelectronics"/>
-                                    <attribute name="prefix" value="U"/>
-                                    <attribute name="datasheet" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
-                                    <attribute name="import_ts" value="1521848045"/>
-                                    <attribute name="Operating_FrequencyF_Processor_speed_MHz" value="120"/>
-                                    <attribute name="footprint_variant_name_0" value="STM-LQFP64_V"/>
-                                    <attribute name="footprint_variant_name_1" value="Level C"/>
-                                    <attribute name="footprint_variant_name_2" value="Level B"/>
-                                    <attribute name="footprint_variant_name_3" value="Level A"/>
-                                    <attribute name="imported_from" value="vault"/>
-                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
-                                    <attribute name="package" value="LQFP64"/>
-                                </technology>
-                            </technologies>
-                        </device>
-                        <device name="STMICROELECTRONICS_STM32F205RBT6_0_3" package="STMICROELECTRONICS_STM32F205RBT6_3">
-                            <connects>
-                                <connect gate="B" pad="1" pin="VBAT"/>
-                                <connect gate="A" pad="10" pin="PC2"/>
-                                <connect gate="A" pad="11" pin="PC3"/>
-                                <connect gate="B" pad="12" pin="VSSA"/>
-                                <connect gate="B" pad="13" pin="VDDA"/>
-                                <connect gate="A" pad="14" pin="PA0-WKUP(PA0)"/>
-                                <connect gate="A" pad="15" pin="PA1"/>
-                                <connect gate="A" pad="16" pin="PA2"/>
-                                <connect gate="A" pad="17" pin="PA3"/>
-                                <connect gate="B" pad="18" pin="VSS_4"/>
-                                <connect gate="B" pad="19" pin="VDD_4"/>
-                                <connect gate="A" pad="2" pin="PC13"/>
-                                <connect gate="A" pad="20" pin="PA4"/>
-                                <connect gate="A" pad="21" pin="PA5"/>
-                                <connect gate="A" pad="22" pin="PA6"/>
-                                <connect gate="A" pad="23" pin="PA7"/>
-                                <connect gate="A" pad="24" pin="PC4"/>
-                                <connect gate="A" pad="25" pin="PC5"/>
-                                <connect gate="A" pad="26" pin="PB0"/>
-                                <connect gate="A" pad="27" pin="PB1"/>
-                                <connect gate="A" pad="28" pin="PB2/BOOT1(PB2)"/>
-                                <connect gate="A" pad="29" pin="PB10"/>
-                                <connect gate="A" pad="3" pin="PC14-OSC32_IN(PC14)"/>
-                                <connect gate="A" pad="30" pin="PB11"/>
-                                <connect gate="B" pad="31" pin="VCAP_1"/>
-                                <connect gate="B" pad="32" pin="VDD_1"/>
-                                <connect gate="A" pad="33" pin="PB12"/>
-                                <connect gate="A" pad="34" pin="PB13"/>
-                                <connect gate="A" pad="35" pin="PB14"/>
-                                <connect gate="A" pad="36" pin="PB15"/>
-                                <connect gate="A" pad="37" pin="PC6"/>
-                                <connect gate="A" pad="38" pin="PC7"/>
-                                <connect gate="A" pad="39" pin="PC8"/>
-                                <connect gate="A" pad="4" pin="PC15-OSC32_OUT(PC15)"/>
-                                <connect gate="A" pad="40" pin="PC9"/>
-                                <connect gate="A" pad="41" pin="PA8"/>
-                                <connect gate="A" pad="42" pin="PA9"/>
-                                <connect gate="A" pad="43" pin="PA10"/>
-                                <connect gate="A" pad="44" pin="PA11"/>
-                                <connect gate="A" pad="45" pin="PA12"/>
-                                <connect gate="A" pad="46" pin="PA13(JTMS-SWDIO)"/>
-                                <connect gate="B" pad="47" pin="VCAP_2"/>
-                                <connect gate="B" pad="48" pin="VDD_2"/>
-                                <connect gate="A" pad="49" pin="PA14(JTCK-SWCLK)"/>
-                                <connect gate="A" pad="5" pin="PH0-OSC_IN(PH0)"/>
-                                <connect gate="A" pad="50" pin="PA15(JTDI)"/>
-                                <connect gate="A" pad="51" pin="PC10"/>
-                                <connect gate="A" pad="52" pin="PC11"/>
-                                <connect gate="A" pad="53" pin="PC12"/>
-                                <connect gate="A" pad="54" pin="PD2"/>
-                                <connect gate="A" pad="55" pin="PB3(JTDO/TRACESWO)"/>
-                                <connect gate="A" pad="56" pin="PB4"/>
-                                <connect gate="A" pad="57" pin="PB5"/>
-                                <connect gate="A" pad="58" pin="PB6"/>
-                                <connect gate="A" pad="59" pin="PB7"/>
-                                <connect gate="A" pad="6" pin="PH1-OSC_OUT(PH1)"/>
-                                <connect gate="A" pad="60" pin="BOOT0"/>
-                                <connect gate="A" pad="61" pin="PB8"/>
-                                <connect gate="A" pad="62" pin="PB9"/>
-                                <connect gate="B" pad="63" pin="VSS_3"/>
-                                <connect gate="B" pad="64" pin="VDD_3"/>
-                                <connect gate="A" pad="7" pin="NRST"/>
-                                <connect gate="A" pad="8" pin="PC0"/>
-                                <connect gate="A" pad="9" pin="PC1"/>
-                            </connects>
-                            <technologies>
-                                <technology>
-                                    <attribute name="IOs_High_Current" value="51"/>
-                                    <attribute name="DA_Converter" value="2x12-bit (2 Channel)"/>
-                                    <attribute name="MPN" value="STM32F205RBT6"/>
-                                    <attribute name="Datasheet_Version" value="Rev. 9"/>
-                                    <attribute name="Package_Version" value="Rev. 4, 06/2013"/>
-                                    <attribute name="Package_Description" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
-                                    <attribute name="Supply_VoltageVcc_min_V" value="1.8"/>
-                                    <attribute name="Core" value="ARM Cortex-M3"/>
-                                    <attribute name="Component_Link_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
-                                    <attribute name="Internal_RAM_Size_kB" value="64"/>
-                                    <attribute name="ciiva_ids" value="3247052"/>
-                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
-                                    <attribute name="vault_guid" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
-                                    <attribute name="Component_Link_1_URL" value="http://www.st.com/web/en/home.html"/>
-                                    <attribute name="imported" value="yes"/>
-                                    <attribute name="Packing" value="Tray"/>
-                                    <attribute name="release_date" value="1387182878"/>
-                                    <attribute name="vault_revision" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
-                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
-                                    <attribute name="FLASH_Size_Prog_kB" value="128"/>
-                                    <attribute name="MF" value="STMicroelectronics"/>
-                                    <attribute name="prefix" value="U"/>
-                                    <attribute name="datasheet" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
-                                    <attribute name="import_ts" value="1521848045"/>
-                                    <attribute name="Operating_FrequencyF_Processor_speed_MHz" value="120"/>
-                                    <attribute name="footprint_variant_name_0" value="STM-LQFP64_V"/>
-                                    <attribute name="footprint_variant_name_1" value="Level C"/>
-                                    <attribute name="footprint_variant_name_2" value="Level B"/>
-                                    <attribute name="footprint_variant_name_3" value="Level A"/>
-                                    <attribute name="imported_from" value="vault"/>
-                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
-                                    <attribute name="package" value="LQFP64"/>
-                                </technology>
-                            </technologies>
-                        </device>
-                    </devices>
-                </deviceset>
-            </devicesets>
-        </library>
-    </drawing>
+<packages>
+<package name="STMICROELECTRONICS_STM32F205RBT6_0">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="-4.75" y1="-4.75" x2="-4.75" y2="4.75" width="0.15" layer="21"/>
+<wire x1="4.75" y1="-4.75" x2="4.75" y2="4.75" width="0.15" layer="21"/>
+<wire x1="-4.75" y1="4.75" x2="4.75" y2="4.75" width="0.15" layer="21"/>
+<wire x1="-4.75" y1="-4.75" x2="4.75" y2="-4.75" width="0.15" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1" layer="51"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.1" layer="51"/>
+<wire x1="-6.45" y1="-6.45" x2="-6.45" y2="6.45" width="0.1" layer="21"/>
+<wire x1="-6.45" y1="6.45" x2="6.45" y2="6.45" width="0.1" layer="21"/>
+<wire x1="6.45" y1="6.45" x2="6.45" y2="-6.45" width="0.1" layer="21"/>
+<wire x1="6.45" y1="-6.45" x2="-6.45" y2="-6.45" width="0.1" layer="21"/>
+<text x="-7.45" y="6.45" size="1" layer="25">&gt;NAME</text>
+<circle x="-5.75" y="4.45" radius="0.125" width="0.25" layer="21"/>
+<circle x="-3.75" y="3.75" radius="0.3" width="0.6" layer="21"/>
+<circle x="-4.1" y="4.1" radius="0.5" width="0.1" layer="51"/>
+<smd name="1" x="-5.75" y="3.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="-5.75" y="3.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="-5.75" y="2.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-5.75" y="2.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="-5.75" y="1.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-5.75" y="1.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-5.75" y="0.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-5.75" y="0.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="-5.75" y="-0.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="-5.75" y="-0.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="11" x="-5.75" y="-1.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="12" x="-5.75" y="-1.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="13" x="-5.75" y="-2.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="14" x="-5.75" y="-2.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="15" x="-5.75" y="-3.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="16" x="-5.75" y="-3.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="17" x="-3.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="18" x="-3.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="19" x="-2.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="20" x="-2.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="21" x="-1.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="22" x="-1.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="23" x="-0.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="24" x="-0.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="25" x="0.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="26" x="0.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="27" x="1.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="28" x="1.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="29" x="2.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="30" x="2.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="31" x="3.25" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="32" x="3.75" y="-5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="33" x="5.75" y="-3.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="34" x="5.75" y="-3.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="35" x="5.75" y="-2.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="36" x="5.75" y="-2.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="37" x="5.75" y="-1.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="38" x="5.75" y="-1.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="39" x="5.75" y="-0.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="40" x="5.75" y="-0.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="41" x="5.75" y="0.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="42" x="5.75" y="0.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="43" x="5.75" y="1.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="44" x="5.75" y="1.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="45" x="5.75" y="2.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="46" x="5.75" y="2.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="47" x="5.75" y="3.25" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="48" x="5.75" y="3.75" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<smd name="49" x="3.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="50" x="3.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="51" x="2.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="52" x="2.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="53" x="1.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="54" x="1.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="55" x="0.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="56" x="0.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="57" x="-0.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="58" x="-0.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="59" x="-1.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="60" x="-1.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="61" x="-2.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="62" x="-2.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="63" x="-3.25" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+<smd name="64" x="-3.75" y="5.75" dx="0.3" dy="1.2" layer="1"/>
+</package>
+<package name="STMICROELECTRONICS_STM32F205RBT6_1">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="-4.35" y1="-4.35" x2="-4.35" y2="4.35" width="0.15" layer="21"/>
+<wire x1="4.35" y1="-4.35" x2="4.35" y2="4.35" width="0.15" layer="21"/>
+<wire x1="-4.35" y1="4.35" x2="4.35" y2="4.35" width="0.15" layer="21"/>
+<wire x1="-4.35" y1="-4.35" x2="4.35" y2="-4.35" width="0.15" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1" layer="51"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.1" layer="51"/>
+<wire x1="-6.4" y1="-6.4" x2="-6.4" y2="6.4" width="0.1" layer="41"/>
+<wire x1="-6.4" y1="6.4" x2="6.4" y2="6.4" width="0.1" layer="41"/>
+<wire x1="6.4" y1="6.4" x2="6.4" y2="-6.4" width="0.1" layer="41"/>
+<wire x1="6.4" y1="-6.4" x2="-6.4" y2="-6.4" width="0.1" layer="41"/>
+<text x="-7.4" y="6.4" size="1" layer="25">&gt;NAME</text>
+<circle x="-5.525" y="4.425" radius="0.125" width="0.25" layer="21"/>
+<circle x="-3.35" y="3.35" radius="0.3" width="0.6" layer="21"/>
+<circle x="-4.1" y="4.1" radius="0.5" width="0.1" layer="51"/>
+<smd name="1" x="-5.525" y="3.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-5.525" y="3.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="-5.525" y="2.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="-5.525" y="2.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="5" x="-5.525" y="1.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="-5.525" y="1.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="-5.525" y="0.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-5.525" y="0.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-5.525" y="-0.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="-5.525" y="-0.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="-5.525" y="-1.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="-5.525" y="-1.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="-5.525" y="-2.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="-5.525" y="-2.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="-5.525" y="-3.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="-5.525" y="-3.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="-3.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="18" x="-3.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="19" x="-2.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="20" x="-2.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="21" x="-1.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="22" x="-1.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="23" x="-0.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="24" x="-0.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="25" x="0.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="26" x="0.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="27" x="1.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="28" x="1.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="29" x="2.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="30" x="2.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="31" x="3.25" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="32" x="3.75" y="-5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="33" x="5.525" y="-3.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="34" x="5.525" y="-3.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="35" x="5.525" y="-2.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="36" x="5.525" y="-2.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="37" x="5.525" y="-1.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="38" x="5.525" y="-1.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="39" x="5.525" y="-0.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="40" x="5.525" y="-0.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="41" x="5.525" y="0.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="42" x="5.525" y="0.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="43" x="5.525" y="1.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="44" x="5.525" y="1.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="45" x="5.525" y="2.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="46" x="5.525" y="2.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="47" x="5.525" y="3.25" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="48" x="5.525" y="3.75" dx="0.25" dy="1.55" layer="1" roundness="100" rot="R90"/>
+<smd name="49" x="3.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="50" x="3.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="51" x="2.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="52" x="2.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="53" x="1.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="54" x="1.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="55" x="0.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="56" x="0.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="57" x="-0.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="58" x="-0.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="59" x="-1.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="60" x="-1.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="61" x="-2.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="62" x="-2.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="63" x="-3.25" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+<smd name="64" x="-3.75" y="5.525" dx="0.25" dy="1.55" layer="1" roundness="100"/>
+</package>
+<package name="STMICROELECTRONICS_STM32F205RBT6_2">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="-4.25" y1="-4.25" x2="4.25" y2="-4.25" width="0.15" layer="21"/>
+<wire x1="-4.25" y1="4.25" x2="4.25" y2="4.25" width="0.15" layer="21"/>
+<wire x1="4.25" y1="-4.25" x2="4.25" y2="4.25" width="0.15" layer="21"/>
+<wire x1="-4.25" y1="-4.25" x2="-4.25" y2="4.25" width="0.15" layer="21"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.1" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1" layer="51"/>
+<wire x1="-6.7" y1="-6.7" x2="-6.7" y2="6.7" width="0.1" layer="41"/>
+<wire x1="-6.7" y1="6.7" x2="6.7" y2="6.7" width="0.1" layer="41"/>
+<wire x1="6.7" y1="6.7" x2="6.7" y2="-6.7" width="0.1" layer="41"/>
+<wire x1="6.7" y1="-6.7" x2="-6.7" y2="-6.7" width="0.1" layer="41"/>
+<text x="-7.7" y="6.7" size="1" layer="25">&gt;NAME</text>
+<circle x="-3.25" y="3.25" radius="0.3" width="0.6" layer="21"/>
+<circle x="-5.55" y="4.45" radius="0.125" width="0.25" layer="21"/>
+<circle x="-4.1" y="4.1" radius="0.5" width="0.1" layer="51"/>
+<smd name="64" x="-3.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="63" x="-3.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="62" x="-2.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="61" x="-2.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="60" x="-1.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="59" x="-1.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="58" x="-0.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="57" x="-0.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="56" x="0.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="55" x="0.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="54" x="1.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="53" x="1.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="52" x="2.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="51" x="2.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="50" x="3.25" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="49" x="3.75" y="5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="48" x="5.55" y="3.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="47" x="5.55" y="3.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="46" x="5.55" y="2.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="45" x="5.55" y="2.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="44" x="5.55" y="1.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="43" x="5.55" y="1.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="42" x="5.55" y="0.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="41" x="5.55" y="0.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="40" x="5.55" y="-0.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="39" x="5.55" y="-0.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="38" x="5.55" y="-1.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="37" x="5.55" y="-1.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="36" x="5.55" y="-2.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="35" x="5.55" y="-2.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="34" x="5.55" y="-3.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="33" x="5.55" y="-3.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="32" x="3.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="31" x="3.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="30" x="2.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="29" x="2.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="28" x="1.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="27" x="1.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="26" x="0.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="25" x="0.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="24" x="-0.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="23" x="-0.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="22" x="-1.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="21" x="-1.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="20" x="-2.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="19" x="-2.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="18" x="-3.25" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="17" x="-3.75" y="-5.55" dx="0.3" dy="1.8" layer="1" roundness="100"/>
+<smd name="16" x="-5.55" y="-3.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="-5.55" y="-3.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="-5.55" y="-2.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="-5.55" y="-2.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="-5.55" y="-1.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="-5.55" y="-1.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="-5.55" y="-0.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-5.55" y="-0.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-5.55" y="0.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="-5.55" y="0.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="-5.55" y="1.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="5" x="-5.55" y="1.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="-5.55" y="2.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="-5.55" y="2.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-5.55" y="3.25" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="-5.55" y="3.75" dx="0.3" dy="1.8" layer="1" roundness="100" rot="R90"/>
+</package>
+<package name="STMICROELECTRONICS_STM32F205RBT6_3">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="-4.15" y1="-4.15" x2="4.15" y2="-4.15" width="0.15" layer="21"/>
+<wire x1="-4.15" y1="4.15" x2="4.15" y2="4.15" width="0.15" layer="21"/>
+<wire x1="4.15" y1="-4.15" x2="4.15" y2="4.15" width="0.15" layer="21"/>
+<wire x1="-4.15" y1="-4.15" x2="-4.15" y2="4.15" width="0.15" layer="21"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.1" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1" layer="51"/>
+<wire x1="-7.15" y1="-7.15" x2="-7.15" y2="7.15" width="0.1" layer="41"/>
+<wire x1="-7.15" y1="7.15" x2="7.15" y2="7.15" width="0.1" layer="41"/>
+<wire x1="7.15" y1="7.15" x2="7.15" y2="-7.15" width="0.1" layer="41"/>
+<wire x1="7.15" y1="-7.15" x2="-7.15" y2="-7.15" width="0.1" layer="41"/>
+<text x="-8.15" y="7.15" size="1" layer="25">&gt;NAME</text>
+<circle x="-3.15" y="3.15" radius="0.3" width="0.6" layer="21"/>
+<circle x="-5.6" y="4.45" radius="0.125" width="0.25" layer="21"/>
+<circle x="-4.1" y="4.1" radius="0.5" width="0.1" layer="51"/>
+<smd name="64" x="-3.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="63" x="-3.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="62" x="-2.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="61" x="-2.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="60" x="-1.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="59" x="-1.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="58" x="-0.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="57" x="-0.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="56" x="0.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="55" x="0.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="54" x="1.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="53" x="1.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="52" x="2.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="51" x="2.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="50" x="3.25" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="49" x="3.75" y="5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="48" x="5.6" y="3.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="47" x="5.6" y="3.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="46" x="5.6" y="2.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="45" x="5.6" y="2.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="44" x="5.6" y="1.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="43" x="5.6" y="1.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="42" x="5.6" y="0.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="41" x="5.6" y="0.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="40" x="5.6" y="-0.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="39" x="5.6" y="-0.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="38" x="5.6" y="-1.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="37" x="5.6" y="-1.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="36" x="5.6" y="-2.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="35" x="5.6" y="-2.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="34" x="5.6" y="-3.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="33" x="5.6" y="-3.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="32" x="3.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="31" x="3.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="30" x="2.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="29" x="2.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="28" x="1.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="27" x="1.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="26" x="0.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="25" x="0.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="24" x="-0.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="23" x="-0.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="22" x="-1.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="21" x="-1.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="20" x="-2.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="19" x="-2.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="18" x="-3.25" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="17" x="-3.75" y="-5.6" dx="0.3" dy="2.1" layer="1" roundness="100"/>
+<smd name="16" x="-5.6" y="-3.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="-5.6" y="-3.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="-5.6" y="-2.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="-5.6" y="-2.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="-5.6" y="-1.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="-5.6" y="-1.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="-5.6" y="-0.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-5.6" y="-0.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-5.6" y="0.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="-5.6" y="0.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="-5.6" y="1.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="5" x="-5.6" y="1.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="-5.6" y="2.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="-5.6" y="2.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-5.6" y="3.25" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="-5.6" y="3.75" dx="0.3" dy="2.1" layer="1" roundness="100" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="STMICROELECTRONICS_STM32F205RBT6_0_0">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="0" y1="-96.52" x2="0" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="0" y1="-5.08" x2="35.56" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="35.56" y1="-5.08" x2="35.56" y2="-96.52" width="0.508" layer="94"/>
+<wire x1="35.56" y1="-96.52" x2="0" y2="-96.52" width="0.508" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-7.62" width="0.15" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-10.16" width="0.15" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="-12.7" width="0.15" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="-15.24" width="0.15" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="-20.32" width="0.15" layer="94"/>
+<wire x1="0" y1="-22.86" x2="0" y2="-22.86" width="0.15" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-25.4" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-7.62" x2="35.56" y2="-7.62" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-10.16" x2="35.56" y2="-10.16" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-12.7" x2="35.56" y2="-12.7" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-35.56" x2="35.56" y2="-35.56" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-38.1" x2="35.56" y2="-38.1" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-40.64" x2="35.56" y2="-40.64" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-43.18" x2="35.56" y2="-43.18" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-45.72" x2="35.56" y2="-45.72" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-48.26" width="0.15" layer="94"/>
+<wire x1="0" y1="-30.48" x2="0" y2="-30.48" width="0.15" layer="94"/>
+<wire x1="0" y1="-33.02" x2="0" y2="-33.02" width="0.15" layer="94"/>
+<wire x1="0" y1="-35.56" x2="0" y2="-35.56" width="0.15" layer="94"/>
+<wire x1="0" y1="-38.1" x2="0" y2="-38.1" width="0.15" layer="94"/>
+<wire x1="0" y1="-40.64" x2="0" y2="-40.64" width="0.15" layer="94"/>
+<wire x1="0" y1="-43.18" x2="0" y2="-43.18" width="0.15" layer="94"/>
+<wire x1="0" y1="-45.72" x2="0" y2="-45.72" width="0.15" layer="94"/>
+<wire x1="0" y1="-48.26" x2="0" y2="-48.26" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-15.24" x2="35.56" y2="-15.24" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-17.78" x2="35.56" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-20.32" x2="35.56" y2="-20.32" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="-22.86" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-25.4" x2="35.56" y2="-25.4" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-30.48" x2="35.56" y2="-30.48" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-33.02" x2="35.56" y2="-33.02" width="0.15" layer="94"/>
+<wire x1="0" y1="-88.9" x2="0" y2="-88.9" width="0.15" layer="94"/>
+<wire x1="0" y1="-91.44" x2="0" y2="-91.44" width="0.15" layer="94"/>
+<wire x1="0" y1="-93.98" x2="0" y2="-93.98" width="0.15" layer="94"/>
+<wire x1="0" y1="-53.34" x2="0" y2="-53.34" width="0.15" layer="94"/>
+<wire x1="0" y1="-55.88" x2="0" y2="-55.88" width="0.15" layer="94"/>
+<wire x1="0" y1="-58.42" x2="0" y2="-58.42" width="0.15" layer="94"/>
+<wire x1="0" y1="-60.96" x2="0" y2="-60.96" width="0.15" layer="94"/>
+<wire x1="0" y1="-63.5" x2="0" y2="-63.5" width="0.15" layer="94"/>
+<wire x1="0" y1="-66.04" x2="0" y2="-66.04" width="0.15" layer="94"/>
+<wire x1="0" y1="-68.58" x2="0" y2="-68.58" width="0.15" layer="94"/>
+<wire x1="0" y1="-71.12" x2="0" y2="-71.12" width="0.15" layer="94"/>
+<wire x1="0" y1="-76.2" x2="0" y2="-76.2" width="0.15" layer="94"/>
+<wire x1="0" y1="-78.74" x2="0" y2="-78.74" width="0.15" layer="94"/>
+<wire x1="0" y1="-81.28" x2="0" y2="-81.28" width="0.15" layer="94"/>
+<wire x1="0" y1="-83.82" x2="0" y2="-83.82" width="0.15" layer="94"/>
+<wire x1="0" y1="-86.36" x2="0" y2="-86.36" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-53.34" x2="35.56" y2="-53.34" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-81.28" x2="35.56" y2="-81.28" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-76.2" x2="35.56" y2="-76.2" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-58.42" x2="35.56" y2="-58.42" width="0.15" layer="94"/>
+<wire x1="35.56" y1="-60.96" x2="35.56" y2="-60.96" width="0.15" layer="94"/>
+<text x="0" y="-2.54" size="2.54" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-101.6" size="2.54" layer="95" align="top-left">STM32F205RBT6</text>
+<pin name="PA0-WKUP(PA0)" x="-5.08" y="-7.62" length="middle"/>
+<pin name="PA1" x="-5.08" y="-10.16" length="middle"/>
+<pin name="PA2" x="-5.08" y="-12.7" length="middle"/>
+<pin name="PA3" x="-5.08" y="-15.24" length="middle"/>
+<pin name="PA4" x="-5.08" y="-17.78" length="middle"/>
+<pin name="PA5" x="-5.08" y="-20.32" length="middle"/>
+<pin name="PA6" x="-5.08" y="-22.86" length="middle"/>
+<pin name="PA7" x="-5.08" y="-25.4" length="middle"/>
+<pin name="PB0" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB1" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="PB2/BOOT1(PB2)" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB10" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="PB11" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="PB12" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="PB13" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="PB14" x="40.64" y="-45.72" length="middle" rot="R180"/>
+<pin name="PB15" x="40.64" y="-48.26" length="middle" rot="R180"/>
+<pin name="PA8" x="-5.08" y="-30.48" length="middle"/>
+<pin name="PA9" x="-5.08" y="-33.02" length="middle"/>
+<pin name="PA10" x="-5.08" y="-35.56" length="middle"/>
+<pin name="PA11" x="-5.08" y="-38.1" length="middle"/>
+<pin name="PA12" x="-5.08" y="-40.64" length="middle"/>
+<pin name="PA13(JTMS-SWDIO)" x="-5.08" y="-43.18" length="middle"/>
+<pin name="PA14(JTCK-SWCLK)" x="-5.08" y="-45.72" length="middle"/>
+<pin name="PA15(JTDI)" x="-5.08" y="-48.26" length="middle"/>
+<pin name="PB3(JTDO/TRACESWO)" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB4" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB5" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB6" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB7" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB8" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<pin name="PB9" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="PC13" x="-5.08" y="-88.9" length="middle"/>
+<pin name="PC14-OSC32_IN(PC14)" x="-5.08" y="-91.44" length="middle"/>
+<pin name="PC15-OSC32_OUT(PC15)" x="-5.08" y="-93.98" length="middle"/>
+<pin name="PC0" x="-5.08" y="-53.34" length="middle"/>
+<pin name="PC1" x="-5.08" y="-55.88" length="middle"/>
+<pin name="PC2" x="-5.08" y="-58.42" length="middle"/>
+<pin name="PC3" x="-5.08" y="-60.96" length="middle"/>
+<pin name="PC4" x="-5.08" y="-63.5" length="middle"/>
+<pin name="PC5" x="-5.08" y="-66.04" length="middle"/>
+<pin name="PC6" x="-5.08" y="-68.58" length="middle"/>
+<pin name="PC7" x="-5.08" y="-71.12" length="middle"/>
+<pin name="PC8" x="-5.08" y="-76.2" length="middle"/>
+<pin name="PC9" x="-5.08" y="-78.74" length="middle"/>
+<pin name="PC10" x="-5.08" y="-81.28" length="middle"/>
+<pin name="PC11" x="-5.08" y="-83.82" length="middle"/>
+<pin name="PC12" x="-5.08" y="-86.36" length="middle"/>
+<pin name="PD2" x="40.64" y="-53.34" length="middle" rot="R180"/>
+<pin name="NRST" x="40.64" y="-81.28" length="middle" rot="R180"/>
+<pin name="BOOT0" x="40.64" y="-76.2" length="middle" direction="in" rot="R180"/>
+<pin name="PH0-OSC_IN(PH0)" x="40.64" y="-58.42" length="middle" rot="R180"/>
+<pin name="PH1-OSC_OUT(PH1)" x="40.64" y="-60.96" length="middle" rot="R180"/>
+</symbol>
+<symbol name="STMICROELECTRONICS_STM32F205RBT6_0_1">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<wire x1="0" y1="-27.94" x2="0" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="0" y1="-5.08" x2="20.32" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="20.32" y1="-5.08" x2="20.32" y2="-27.94" width="0.508" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="0" y2="-27.94" width="0.508" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-7.62" width="0.15" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="20.32" y2="-25.4" width="0.15" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-25.4" width="0.15" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="20.32" y2="-20.32" width="0.15" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="-20.32" width="0.15" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="-12.7" width="0.15" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="-15.24" width="0.15" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="-17.78" width="0.15" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="-7.62" width="0.15" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="-10.16" width="0.15" layer="94"/>
+<text x="0" y="-2.54" size="2.54" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-33.02" size="2.54" layer="95" align="top-left">STM32F205RBT6</text>
+<pin name="VBAT" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VSSA" x="25.4" y="-25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDA" x="-5.08" y="-25.4" length="middle" direction="pwr"/>
+<pin name="VSS_4" x="25.4" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD_4" x="-5.08" y="-20.32" length="middle" direction="pwr"/>
+<pin name="VDD_1" x="-5.08" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VDD_2" x="-5.08" y="-15.24" length="middle" direction="pwr"/>
+<pin name="VSS_3" x="25.4" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD_3" x="-5.08" y="-17.78" length="middle" direction="pwr"/>
+<pin name="VCAP_1" x="25.4" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCAP_2" x="25.4" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STMICROELECTRONICS_STM32F205RBT6" prefix="U">
+<description>MC-ARM-STM32F20X-SQ64</description>
+<gates>
+<gate name="A" symbol="STMICROELECTRONICS_STM32F205RBT6_0_0" x="0" y="0"/>
+<gate name="B" symbol="STMICROELECTRONICS_STM32F205RBT6_0_1" x="55.56" y="0"/>
+</gates>
+<devices>
+<device name="STMICROELECTRONICS_STM32F205RBT6_0_0" package="STMICROELECTRONICS_STM32F205RBT6_0">
+<connects>
+<connect gate="A" pin="BOOT0" pad="60"/>
+<connect gate="A" pin="NRST" pad="7"/>
+<connect gate="A" pin="PA0-WKUP(PA0)" pad="14"/>
+<connect gate="A" pin="PA1" pad="15"/>
+<connect gate="A" pin="PA10" pad="43"/>
+<connect gate="A" pin="PA11" pad="44"/>
+<connect gate="A" pin="PA12" pad="45"/>
+<connect gate="A" pin="PA13(JTMS-SWDIO)" pad="46"/>
+<connect gate="A" pin="PA14(JTCK-SWCLK)" pad="49"/>
+<connect gate="A" pin="PA15(JTDI)" pad="50"/>
+<connect gate="A" pin="PA2" pad="16"/>
+<connect gate="A" pin="PA3" pad="17"/>
+<connect gate="A" pin="PA4" pad="20"/>
+<connect gate="A" pin="PA5" pad="21"/>
+<connect gate="A" pin="PA6" pad="22"/>
+<connect gate="A" pin="PA7" pad="23"/>
+<connect gate="A" pin="PA8" pad="41"/>
+<connect gate="A" pin="PA9" pad="42"/>
+<connect gate="A" pin="PB0" pad="26"/>
+<connect gate="A" pin="PB1" pad="27"/>
+<connect gate="A" pin="PB10" pad="29"/>
+<connect gate="A" pin="PB11" pad="30"/>
+<connect gate="A" pin="PB12" pad="33"/>
+<connect gate="A" pin="PB13" pad="34"/>
+<connect gate="A" pin="PB14" pad="35"/>
+<connect gate="A" pin="PB15" pad="36"/>
+<connect gate="A" pin="PB2/BOOT1(PB2)" pad="28"/>
+<connect gate="A" pin="PB3(JTDO/TRACESWO)" pad="55"/>
+<connect gate="A" pin="PB4" pad="56"/>
+<connect gate="A" pin="PB5" pad="57"/>
+<connect gate="A" pin="PB6" pad="58"/>
+<connect gate="A" pin="PB7" pad="59"/>
+<connect gate="A" pin="PB8" pad="61"/>
+<connect gate="A" pin="PB9" pad="62"/>
+<connect gate="A" pin="PC0" pad="8"/>
+<connect gate="A" pin="PC1" pad="9"/>
+<connect gate="A" pin="PC10" pad="51"/>
+<connect gate="A" pin="PC11" pad="52"/>
+<connect gate="A" pin="PC12" pad="53"/>
+<connect gate="A" pin="PC13" pad="2"/>
+<connect gate="A" pin="PC14-OSC32_IN(PC14)" pad="3"/>
+<connect gate="A" pin="PC15-OSC32_OUT(PC15)" pad="4"/>
+<connect gate="A" pin="PC2" pad="10"/>
+<connect gate="A" pin="PC3" pad="11"/>
+<connect gate="A" pin="PC4" pad="24"/>
+<connect gate="A" pin="PC5" pad="25"/>
+<connect gate="A" pin="PC6" pad="37"/>
+<connect gate="A" pin="PC7" pad="38"/>
+<connect gate="A" pin="PC8" pad="39"/>
+<connect gate="A" pin="PC9" pad="40"/>
+<connect gate="A" pin="PD2" pad="54"/>
+<connect gate="A" pin="PH0-OSC_IN(PH0)" pad="5"/>
+<connect gate="A" pin="PH1-OSC_OUT(PH1)" pad="6"/>
+<connect gate="B" pin="VBAT" pad="1"/>
+<connect gate="B" pin="VCAP_1" pad="31"/>
+<connect gate="B" pin="VCAP_2" pad="47"/>
+<connect gate="B" pin="VDDA" pad="13"/>
+<connect gate="B" pin="VDD_1" pad="32"/>
+<connect gate="B" pin="VDD_2" pad="48"/>
+<connect gate="B" pin="VDD_3" pad="64"/>
+<connect gate="B" pin="VDD_4" pad="19"/>
+<connect gate="B" pin="VSSA" pad="12"/>
+<connect gate="B" pin="VSS_3" pad="63"/>
+<connect gate="B" pin="VSS_4" pad="18"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CIIVA_IDS" value="3247052"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.st.com/web/en/home.html"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
+<attribute name="CORE" value="ARM Cortex-M3"/>
+<attribute name="DATASHEET" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 9"/>
+<attribute name="DA_CONVERTER" value="2x12-bit (2 Channel)"/>
+<attribute name="FLASH_SIZE_PROG_KB" value="128"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="STM-LQFP64_V"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_1" value="Level C"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_2" value="Level B"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_3" value="Level A"/>
+<attribute name="IMPORTED" value="yes"/>
+<attribute name="IMPORTED_FROM" value="vault"/>
+<attribute name="IMPORT_TS" value="1521848045"/>
+<attribute name="INTERNAL_RAM_SIZE_KB" value="64"/>
+<attribute name="IOS_HIGH_CURRENT" value="51"/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount"/>
+<attribute name="MPN" value="STM32F205RBT6"/>
+<attribute name="OPERATING_FREQUENCYF_PROCESSOR_SPEED_MHZ" value="120"/>
+<attribute name="PACKAGE" value="LQFP64"/>
+<attribute name="PACKAGE_DESCRIPTION" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
+<attribute name="PACKAGE_VERSION" value="Rev. 4, 06/2013"/>
+<attribute name="PACKING" value="Tray"/>
+<attribute name="PREFIX" value="U"/>
+<attribute name="RELEASE_DATE" value="1387182878"/>
+<attribute name="SUPPLY_VOLTAGEVCC_MIN_V" value="1.8"/>
+<attribute name="VAULT_GUID" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
+<attribute name="VAULT_REVISION" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
+</technology>
+</technologies>
+</device>
+<device name="STMICROELECTRONICS_STM32F205RBT6_0_1" package="STMICROELECTRONICS_STM32F205RBT6_1">
+<connects>
+<connect gate="A" pin="BOOT0" pad="60"/>
+<connect gate="A" pin="NRST" pad="7"/>
+<connect gate="A" pin="PA0-WKUP(PA0)" pad="14"/>
+<connect gate="A" pin="PA1" pad="15"/>
+<connect gate="A" pin="PA10" pad="43"/>
+<connect gate="A" pin="PA11" pad="44"/>
+<connect gate="A" pin="PA12" pad="45"/>
+<connect gate="A" pin="PA13(JTMS-SWDIO)" pad="46"/>
+<connect gate="A" pin="PA14(JTCK-SWCLK)" pad="49"/>
+<connect gate="A" pin="PA15(JTDI)" pad="50"/>
+<connect gate="A" pin="PA2" pad="16"/>
+<connect gate="A" pin="PA3" pad="17"/>
+<connect gate="A" pin="PA4" pad="20"/>
+<connect gate="A" pin="PA5" pad="21"/>
+<connect gate="A" pin="PA6" pad="22"/>
+<connect gate="A" pin="PA7" pad="23"/>
+<connect gate="A" pin="PA8" pad="41"/>
+<connect gate="A" pin="PA9" pad="42"/>
+<connect gate="A" pin="PB0" pad="26"/>
+<connect gate="A" pin="PB1" pad="27"/>
+<connect gate="A" pin="PB10" pad="29"/>
+<connect gate="A" pin="PB11" pad="30"/>
+<connect gate="A" pin="PB12" pad="33"/>
+<connect gate="A" pin="PB13" pad="34"/>
+<connect gate="A" pin="PB14" pad="35"/>
+<connect gate="A" pin="PB15" pad="36"/>
+<connect gate="A" pin="PB2/BOOT1(PB2)" pad="28"/>
+<connect gate="A" pin="PB3(JTDO/TRACESWO)" pad="55"/>
+<connect gate="A" pin="PB4" pad="56"/>
+<connect gate="A" pin="PB5" pad="57"/>
+<connect gate="A" pin="PB6" pad="58"/>
+<connect gate="A" pin="PB7" pad="59"/>
+<connect gate="A" pin="PB8" pad="61"/>
+<connect gate="A" pin="PB9" pad="62"/>
+<connect gate="A" pin="PC0" pad="8"/>
+<connect gate="A" pin="PC1" pad="9"/>
+<connect gate="A" pin="PC10" pad="51"/>
+<connect gate="A" pin="PC11" pad="52"/>
+<connect gate="A" pin="PC12" pad="53"/>
+<connect gate="A" pin="PC13" pad="2"/>
+<connect gate="A" pin="PC14-OSC32_IN(PC14)" pad="3"/>
+<connect gate="A" pin="PC15-OSC32_OUT(PC15)" pad="4"/>
+<connect gate="A" pin="PC2" pad="10"/>
+<connect gate="A" pin="PC3" pad="11"/>
+<connect gate="A" pin="PC4" pad="24"/>
+<connect gate="A" pin="PC5" pad="25"/>
+<connect gate="A" pin="PC6" pad="37"/>
+<connect gate="A" pin="PC7" pad="38"/>
+<connect gate="A" pin="PC8" pad="39"/>
+<connect gate="A" pin="PC9" pad="40"/>
+<connect gate="A" pin="PD2" pad="54"/>
+<connect gate="A" pin="PH0-OSC_IN(PH0)" pad="5"/>
+<connect gate="A" pin="PH1-OSC_OUT(PH1)" pad="6"/>
+<connect gate="B" pin="VBAT" pad="1"/>
+<connect gate="B" pin="VCAP_1" pad="31"/>
+<connect gate="B" pin="VCAP_2" pad="47"/>
+<connect gate="B" pin="VDDA" pad="13"/>
+<connect gate="B" pin="VDD_1" pad="32"/>
+<connect gate="B" pin="VDD_2" pad="48"/>
+<connect gate="B" pin="VDD_3" pad="64"/>
+<connect gate="B" pin="VDD_4" pad="19"/>
+<connect gate="B" pin="VSSA" pad="12"/>
+<connect gate="B" pin="VSS_3" pad="63"/>
+<connect gate="B" pin="VSS_4" pad="18"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CIIVA_IDS" value="3247052"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.st.com/web/en/home.html"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
+<attribute name="CORE" value="ARM Cortex-M3"/>
+<attribute name="DATASHEET" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 9"/>
+<attribute name="DA_CONVERTER" value="2x12-bit (2 Channel)"/>
+<attribute name="FLASH_SIZE_PROG_KB" value="128"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="STM-LQFP64_V"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_1" value="Level C"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_2" value="Level B"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_3" value="Level A"/>
+<attribute name="IMPORTED" value="yes"/>
+<attribute name="IMPORTED_FROM" value="vault"/>
+<attribute name="IMPORT_TS" value="1521848045"/>
+<attribute name="INTERNAL_RAM_SIZE_KB" value="64"/>
+<attribute name="IOS_HIGH_CURRENT" value="51"/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount"/>
+<attribute name="MPN" value="STM32F205RBT6"/>
+<attribute name="OPERATING_FREQUENCYF_PROCESSOR_SPEED_MHZ" value="120"/>
+<attribute name="PACKAGE" value="LQFP64"/>
+<attribute name="PACKAGE_DESCRIPTION" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
+<attribute name="PACKAGE_VERSION" value="Rev. 4, 06/2013"/>
+<attribute name="PACKING" value="Tray"/>
+<attribute name="PREFIX" value="U"/>
+<attribute name="RELEASE_DATE" value="1387182878"/>
+<attribute name="SUPPLY_VOLTAGEVCC_MIN_V" value="1.8"/>
+<attribute name="VAULT_GUID" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
+<attribute name="VAULT_REVISION" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
+</technology>
+</technologies>
+</device>
+<device name="STMICROELECTRONICS_STM32F205RBT6_0_2" package="STMICROELECTRONICS_STM32F205RBT6_2">
+<connects>
+<connect gate="A" pin="BOOT0" pad="60"/>
+<connect gate="A" pin="NRST" pad="7"/>
+<connect gate="A" pin="PA0-WKUP(PA0)" pad="14"/>
+<connect gate="A" pin="PA1" pad="15"/>
+<connect gate="A" pin="PA10" pad="43"/>
+<connect gate="A" pin="PA11" pad="44"/>
+<connect gate="A" pin="PA12" pad="45"/>
+<connect gate="A" pin="PA13(JTMS-SWDIO)" pad="46"/>
+<connect gate="A" pin="PA14(JTCK-SWCLK)" pad="49"/>
+<connect gate="A" pin="PA15(JTDI)" pad="50"/>
+<connect gate="A" pin="PA2" pad="16"/>
+<connect gate="A" pin="PA3" pad="17"/>
+<connect gate="A" pin="PA4" pad="20"/>
+<connect gate="A" pin="PA5" pad="21"/>
+<connect gate="A" pin="PA6" pad="22"/>
+<connect gate="A" pin="PA7" pad="23"/>
+<connect gate="A" pin="PA8" pad="41"/>
+<connect gate="A" pin="PA9" pad="42"/>
+<connect gate="A" pin="PB0" pad="26"/>
+<connect gate="A" pin="PB1" pad="27"/>
+<connect gate="A" pin="PB10" pad="29"/>
+<connect gate="A" pin="PB11" pad="30"/>
+<connect gate="A" pin="PB12" pad="33"/>
+<connect gate="A" pin="PB13" pad="34"/>
+<connect gate="A" pin="PB14" pad="35"/>
+<connect gate="A" pin="PB15" pad="36"/>
+<connect gate="A" pin="PB2/BOOT1(PB2)" pad="28"/>
+<connect gate="A" pin="PB3(JTDO/TRACESWO)" pad="55"/>
+<connect gate="A" pin="PB4" pad="56"/>
+<connect gate="A" pin="PB5" pad="57"/>
+<connect gate="A" pin="PB6" pad="58"/>
+<connect gate="A" pin="PB7" pad="59"/>
+<connect gate="A" pin="PB8" pad="61"/>
+<connect gate="A" pin="PB9" pad="62"/>
+<connect gate="A" pin="PC0" pad="8"/>
+<connect gate="A" pin="PC1" pad="9"/>
+<connect gate="A" pin="PC10" pad="51"/>
+<connect gate="A" pin="PC11" pad="52"/>
+<connect gate="A" pin="PC12" pad="53"/>
+<connect gate="A" pin="PC13" pad="2"/>
+<connect gate="A" pin="PC14-OSC32_IN(PC14)" pad="3"/>
+<connect gate="A" pin="PC15-OSC32_OUT(PC15)" pad="4"/>
+<connect gate="A" pin="PC2" pad="10"/>
+<connect gate="A" pin="PC3" pad="11"/>
+<connect gate="A" pin="PC4" pad="24"/>
+<connect gate="A" pin="PC5" pad="25"/>
+<connect gate="A" pin="PC6" pad="37"/>
+<connect gate="A" pin="PC7" pad="38"/>
+<connect gate="A" pin="PC8" pad="39"/>
+<connect gate="A" pin="PC9" pad="40"/>
+<connect gate="A" pin="PD2" pad="54"/>
+<connect gate="A" pin="PH0-OSC_IN(PH0)" pad="5"/>
+<connect gate="A" pin="PH1-OSC_OUT(PH1)" pad="6"/>
+<connect gate="B" pin="VBAT" pad="1"/>
+<connect gate="B" pin="VCAP_1" pad="31"/>
+<connect gate="B" pin="VCAP_2" pad="47"/>
+<connect gate="B" pin="VDDA" pad="13"/>
+<connect gate="B" pin="VDD_1" pad="32"/>
+<connect gate="B" pin="VDD_2" pad="48"/>
+<connect gate="B" pin="VDD_3" pad="64"/>
+<connect gate="B" pin="VDD_4" pad="19"/>
+<connect gate="B" pin="VSSA" pad="12"/>
+<connect gate="B" pin="VSS_3" pad="63"/>
+<connect gate="B" pin="VSS_4" pad="18"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CIIVA_IDS" value="3247052"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.st.com/web/en/home.html"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
+<attribute name="CORE" value="ARM Cortex-M3"/>
+<attribute name="DATASHEET" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 9"/>
+<attribute name="DA_CONVERTER" value="2x12-bit (2 Channel)"/>
+<attribute name="FLASH_SIZE_PROG_KB" value="128"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="STM-LQFP64_V"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_1" value="Level C"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_2" value="Level B"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_3" value="Level A"/>
+<attribute name="IMPORTED" value="yes"/>
+<attribute name="IMPORTED_FROM" value="vault"/>
+<attribute name="IMPORT_TS" value="1521848045"/>
+<attribute name="INTERNAL_RAM_SIZE_KB" value="64"/>
+<attribute name="IOS_HIGH_CURRENT" value="51"/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount"/>
+<attribute name="MPN" value="STM32F205RBT6"/>
+<attribute name="OPERATING_FREQUENCYF_PROCESSOR_SPEED_MHZ" value="120"/>
+<attribute name="PACKAGE" value="LQFP64"/>
+<attribute name="PACKAGE_DESCRIPTION" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
+<attribute name="PACKAGE_VERSION" value="Rev. 4, 06/2013"/>
+<attribute name="PACKING" value="Tray"/>
+<attribute name="PREFIX" value="U"/>
+<attribute name="RELEASE_DATE" value="1387182878"/>
+<attribute name="SUPPLY_VOLTAGEVCC_MIN_V" value="1.8"/>
+<attribute name="VAULT_GUID" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
+<attribute name="VAULT_REVISION" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
+</technology>
+</technologies>
+</device>
+<device name="STMICROELECTRONICS_STM32F205RBT6_0_3" package="STMICROELECTRONICS_STM32F205RBT6_3">
+<connects>
+<connect gate="A" pin="BOOT0" pad="60"/>
+<connect gate="A" pin="NRST" pad="7"/>
+<connect gate="A" pin="PA0-WKUP(PA0)" pad="14"/>
+<connect gate="A" pin="PA1" pad="15"/>
+<connect gate="A" pin="PA10" pad="43"/>
+<connect gate="A" pin="PA11" pad="44"/>
+<connect gate="A" pin="PA12" pad="45"/>
+<connect gate="A" pin="PA13(JTMS-SWDIO)" pad="46"/>
+<connect gate="A" pin="PA14(JTCK-SWCLK)" pad="49"/>
+<connect gate="A" pin="PA15(JTDI)" pad="50"/>
+<connect gate="A" pin="PA2" pad="16"/>
+<connect gate="A" pin="PA3" pad="17"/>
+<connect gate="A" pin="PA4" pad="20"/>
+<connect gate="A" pin="PA5" pad="21"/>
+<connect gate="A" pin="PA6" pad="22"/>
+<connect gate="A" pin="PA7" pad="23"/>
+<connect gate="A" pin="PA8" pad="41"/>
+<connect gate="A" pin="PA9" pad="42"/>
+<connect gate="A" pin="PB0" pad="26"/>
+<connect gate="A" pin="PB1" pad="27"/>
+<connect gate="A" pin="PB10" pad="29"/>
+<connect gate="A" pin="PB11" pad="30"/>
+<connect gate="A" pin="PB12" pad="33"/>
+<connect gate="A" pin="PB13" pad="34"/>
+<connect gate="A" pin="PB14" pad="35"/>
+<connect gate="A" pin="PB15" pad="36"/>
+<connect gate="A" pin="PB2/BOOT1(PB2)" pad="28"/>
+<connect gate="A" pin="PB3(JTDO/TRACESWO)" pad="55"/>
+<connect gate="A" pin="PB4" pad="56"/>
+<connect gate="A" pin="PB5" pad="57"/>
+<connect gate="A" pin="PB6" pad="58"/>
+<connect gate="A" pin="PB7" pad="59"/>
+<connect gate="A" pin="PB8" pad="61"/>
+<connect gate="A" pin="PB9" pad="62"/>
+<connect gate="A" pin="PC0" pad="8"/>
+<connect gate="A" pin="PC1" pad="9"/>
+<connect gate="A" pin="PC10" pad="51"/>
+<connect gate="A" pin="PC11" pad="52"/>
+<connect gate="A" pin="PC12" pad="53"/>
+<connect gate="A" pin="PC13" pad="2"/>
+<connect gate="A" pin="PC14-OSC32_IN(PC14)" pad="3"/>
+<connect gate="A" pin="PC15-OSC32_OUT(PC15)" pad="4"/>
+<connect gate="A" pin="PC2" pad="10"/>
+<connect gate="A" pin="PC3" pad="11"/>
+<connect gate="A" pin="PC4" pad="24"/>
+<connect gate="A" pin="PC5" pad="25"/>
+<connect gate="A" pin="PC6" pad="37"/>
+<connect gate="A" pin="PC7" pad="38"/>
+<connect gate="A" pin="PC8" pad="39"/>
+<connect gate="A" pin="PC9" pad="40"/>
+<connect gate="A" pin="PD2" pad="54"/>
+<connect gate="A" pin="PH0-OSC_IN(PH0)" pad="5"/>
+<connect gate="A" pin="PH1-OSC_OUT(PH1)" pad="6"/>
+<connect gate="B" pin="VBAT" pad="1"/>
+<connect gate="B" pin="VCAP_1" pad="31"/>
+<connect gate="B" pin="VCAP_2" pad="47"/>
+<connect gate="B" pin="VDDA" pad="13"/>
+<connect gate="B" pin="VDD_1" pad="32"/>
+<connect gate="B" pin="VDD_2" pad="48"/>
+<connect gate="B" pin="VDD_3" pad="64"/>
+<connect gate="B" pin="VDD_4" pad="19"/>
+<connect gate="B" pin="VSSA" pad="12"/>
+<connect gate="B" pin="VSS_3" pad="63"/>
+<connect gate="B" pin="VSS_4" pad="18"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CIIVA_IDS" value="3247052"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.st.com/web/en/home.html"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf"/>
+<attribute name="CORE" value="ARM Cortex-M3"/>
+<attribute name="DATASHEET" value="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 9"/>
+<attribute name="DA_CONVERTER" value="2x12-bit (2 Channel)"/>
+<attribute name="FLASH_SIZE_PROG_KB" value="128"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="STM-LQFP64_V"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_1" value="Level C"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_2" value="Level B"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_3" value="Level A"/>
+<attribute name="IMPORTED" value="yes"/>
+<attribute name="IMPORTED_FROM" value="vault"/>
+<attribute name="IMPORT_TS" value="1521848045"/>
+<attribute name="INTERNAL_RAM_SIZE_KB" value="64"/>
+<attribute name="IOS_HIGH_CURRENT" value="51"/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount"/>
+<attribute name="MPN" value="STM32F205RBT6"/>
+<attribute name="OPERATING_FREQUENCYF_PROCESSOR_SPEED_MHZ" value="120"/>
+<attribute name="PACKAGE" value="LQFP64"/>
+<attribute name="PACKAGE_DESCRIPTION" value="64-Pin Low Profile Quad Flat Package, 10 x 10 mm Body, 0.5 mm Pitch"/>
+<attribute name="PACKAGE_VERSION" value="Rev. 4, 06/2013"/>
+<attribute name="PACKING" value="Tray"/>
+<attribute name="PREFIX" value="U"/>
+<attribute name="RELEASE_DATE" value="1387182878"/>
+<attribute name="SUPPLY_VOLTAGEVCC_MIN_V" value="1.8"/>
+<attribute name="VAULT_GUID" value="B9A76BA8-8D89-41EF-B639-2242C6D4A83A"/>
+<attribute name="VAULT_REVISION" value="779F36A8-E3F5-4D53-926F-EE0FD9A3AA4E"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
 </eagle>
