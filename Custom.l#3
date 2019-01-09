@@ -43,7 +43,7 @@
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -478,13 +478,13 @@
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <wire x1="-13.97" y1="2.54" x2="-13.97" y2="-34.29" width="0.127" layer="49"/>
-<wire x1="-13.97" y1="-34.29" x2="13.97" y2="-34.29" width="0.127" layer="21"/>
-<wire x1="13.97" y1="-34.29" x2="13.97" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-34.29" x2="13.97" y2="-34.29" width="0.127" layer="49"/>
+<wire x1="13.97" y1="-34.29" x2="13.97" y2="2.54" width="0.127" layer="49"/>
 <wire x1="13.97" y1="2.54" x2="-13.97" y2="2.54" width="0.127" layer="49"/>
-<circle x="-10.16" y="-1.27" radius="2.54" width="0.127" layer="21"/>
-<circle x="10.16" y="-1.27" radius="2.54" width="0.127" layer="21"/>
-<circle x="-10.16" y="-30.48" radius="2.54" width="0.127" layer="21"/>
-<circle x="10.16" y="-30.48" radius="2.54" width="0.127" layer="21"/>
+<circle x="-10.16" y="-1.27" radius="2.54" width="0.127" layer="49"/>
+<circle x="10.16" y="-1.27" radius="2.54" width="0.127" layer="49"/>
+<circle x="-10.16" y="-30.48" radius="2.54" width="0.127" layer="49"/>
+<circle x="10.16" y="-30.48" radius="2.54" width="0.127" layer="49"/>
 <rectangle x1="-8.89" y1="-19.05" x2="8.89" y2="-7.62" layer="49"/>
 </package>
 </packages>
