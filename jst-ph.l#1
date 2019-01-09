@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -253,7 +253,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="B6B-PH-K-S(LF)(SN)" prefix="P" uservalue="yes">
+<deviceset name="JST-PH6" prefix="P" uservalue="yes">
 <gates>
 <gate name="A" symbol="CON06" x="0" y="0"/>
 </gates>
@@ -291,7 +291,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="B2B-PH-K-S(LF)(SN)" prefix="P" uservalue="yes">
+<deviceset name="JST-PH2" prefix="P" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CON02" x="0" y="0"/>
 </gates>
@@ -307,7 +307,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="B3B-PH-K-S(LF)(SN)" prefix="P" uservalue="yes">
+<deviceset name="JST-PH3" prefix="P" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CON03" x="0" y="0"/>
 </gates>
