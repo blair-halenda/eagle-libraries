@@ -477,15 +477,15 @@
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<wire x1="-13.97" y1="2.54" x2="-13.97" y2="-34.29" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="2.54" x2="-13.97" y2="-34.29" width="0.127" layer="49"/>
 <wire x1="-13.97" y1="-34.29" x2="13.97" y2="-34.29" width="0.127" layer="21"/>
 <wire x1="13.97" y1="-34.29" x2="13.97" y2="2.54" width="0.127" layer="21"/>
-<wire x1="13.97" y1="2.54" x2="-13.97" y2="2.54" width="0.127" layer="21"/>
+<wire x1="13.97" y1="2.54" x2="-13.97" y2="2.54" width="0.127" layer="49"/>
 <circle x="-10.16" y="-1.27" radius="2.54" width="0.127" layer="21"/>
 <circle x="10.16" y="-1.27" radius="2.54" width="0.127" layer="21"/>
 <circle x="-10.16" y="-30.48" radius="2.54" width="0.127" layer="21"/>
 <circle x="10.16" y="-30.48" radius="2.54" width="0.127" layer="21"/>
-<rectangle x1="-8.89" y1="-19.05" x2="8.89" y2="-7.62" layer="21"/>
+<rectangle x1="-8.89" y1="-19.05" x2="8.89" y2="-7.62" layer="49"/>
 </package>
 </packages>
 <symbols>
@@ -1049,6 +1049,24 @@ in SMD form.</description>
 <connect gate="G$1" pin="5" pad="RXD"/>
 <connect gate="G$1" pin="6" pad="GND1"/>
 <connect gate="G$1" pin="7" pad="RST"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NEO6M-MODULE">
+<gates>
+<gate name="G$1" symbol="PINHD4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NEO6M-MODULE">
+<connects>
+<connect gate="G$1" pin="1" pad="VCC"/>
+<connect gate="G$1" pin="2" pad="RX"/>
+<connect gate="G$1" pin="3" pad="TX"/>
+<connect gate="G$1" pin="4" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
